@@ -1,0 +1,1911 @@
+Started GET "/" for 127.0.0.1 at 2021-01-07 11:07:42 -0800
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 528)
+Completed 200 OK in 22ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 4334)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-07 15:50:12 -0800
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.9ms | Allocations: 528)
+Completed 200 OK in 27ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 4334)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-07 15:51:46 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 124)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: f7a72d14e1f4a0533dfe
+Version: webpack 4.44.2
+Time: 1791ms
+Built at: 01/07/2021 3:51:50 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3afaaa03805b81783f79.js    147 KiB  application  [emitted] [immutable]  application
+js/application-3afaaa03805b81783f79.js.map    163 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3afaaa03805b81783f79.js js/application-3afaaa03805b81783f79.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 182 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/room_channel.js] 459 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4040.8ms | Allocations: 19534)
+Completed 200 OK in 4045ms (Views: 4043.3ms | Allocations: 20725)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-07 15:51:50 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-07 15:51:50 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (51b476d4-3543-40d4-a310-4fe3030d9b92)
+Started GET "/cable" for 127.0.0.1 at 2021-01-07 15:53:15 -0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-07 15:53:15 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (fba53911-738f-49cc-b63c-8f3f61dc0609)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-07 15:53:19 -0800
+RoomChannel stopped streaming from room_channel
+Started GET "/" for 127.0.0.1 at 2021-01-07 15:53:19 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 408)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 6583)
+Completed 200 OK in 40ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 10872)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-07 15:53:19 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-07 15:53:19 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (a3d25822-a09f-40a3-9584-9b3f0a2cc739)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-07 15:54:42 -0800
+RoomChannel stopped streaming from room_channel
+Started GET "/" for 127.0.0.1 at 2021-01-07 15:54:42 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 3dc43c25435c25261e7b
+Version: webpack 4.44.2
+Time: 907ms
+Built at: 01/07/2021 3:54:45 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3903acb30029d31c13fc.js    147 KiB  application  [emitted] [immutable]  application
+js/application-3903acb30029d31c13fc.js.map    163 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3903acb30029d31c13fc.js js/application-3903acb30029d31c13fc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 182 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/room_channel.js] 487 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2737.8ms | Allocations: 5350)
+Completed 200 OK in 2739ms (Views: 2738.3ms | ActiveRecord: 0.0ms | Allocations: 5790)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-07 15:54:45 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-07 15:54:45 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (b1156c77-c5f4-4f61-8807-3b4c74fbd806)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+[ActionCable] Broadcasting to room_channel: {:message=>"hello"}
+RoomChannel transmitting {"message"=>"hello"} (via streamed from room_channel)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-07 15:58:29 -0800
+RoomChannel stopped streaming from room_channel
+Started GET "/" for 127.0.0.1 at 2021-01-07 15:58:29 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 9f5f904c6163f9258bf2
+Version: webpack 4.44.2
+Time: 761ms
+Built at: 01/07/2021 3:58:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9ed21b1d8e65a96835f7.js    147 KiB  application  [emitted] [immutable]  application
+js/application-9ed21b1d8e65a96835f7.js.map    163 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9ed21b1d8e65a96835f7.js js/application-9ed21b1d8e65a96835f7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 182 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/room_channel.js] 516 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2243.2ms | Allocations: 5458)
+Completed 200 OK in 2245ms (Views: 2244.1ms | Allocations: 6053)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-07 15:58:31 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-07 15:58:31 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (dad33b77-444d-4e7a-8f70-121dcd779f1f)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+[ActionCable] Broadcasting to room_channel: {:message=>"hello"}
+[ActionCable] Broadcasting to room_channel_1: {:message=>"hello"}
+RoomChannel transmitting {"message"=>"hello"} (via streamed from room_channel_1)
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210111234642)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210111234642"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-11 23:47:28.681916"], ["updated_at", "2021-01-11 23:47:28.681916"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:05:38 -0800
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 410)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 630ba131267a2527d56d
+Version: webpack 4.44.2
+Time: 1044ms
+Built at: 2021-01-11 16:05:42
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f7f372ce9e5c9baeb0be.js    148 KiB  application  [emitted] [immutable]  application
+js/application-f7f372ce9e5c9baeb0be.js.map    164 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f7f372ce9e5c9baeb0be.js js/application-f7f372ce9e5c9baeb0be.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 565 bytes {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 516 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3353.4ms | Allocations: 8110)
+Completed 200 OK in 3374ms (Views: 3358.5ms | ActiveRecord: 0.0ms | Allocations: 12340)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:05:42 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:05:42 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (5dde75fe-57f6-433f-8812-91e224731377)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:10:43 -0800
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:10:43 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (43fc88e4-949b-454b-a1ad-52daefe8f384)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:11:55 -0800
+RoomChannel stopped streaming from room_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:11:55 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 5172)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 5261)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.4ms | Allocations: 9521)
+
+
+  
+ActionView::Template::Error (undefined method `generate' for #<Class:0x00007fc37c070610>):
+    1: <h1>Pages#index</h1>
+    2: 
+    3: <div id="user-id" data-user-id="<%= current_user.id %>"></div>
+    4: <p>Find me in app/views/pages/index.html.erb</p>
+  
+app/controllers/application_controller.rb:10:in `current_user'
+app/controllers/application_controller.rb:3:in `current_user'
+app/views/pages/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:13:02 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/models/user.rb:5:in `generate'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/user.rb:5:in `generate'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:11:in `generate'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "user_0"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:11:in `generate'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "user_0"], ["created_at", "2021-01-12 00:13:02.471820"], ["updated_at", "2021-01-12 00:13:02.471820"]]
+  ↳ app/models/user.rb:11:in `generate'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:11:in `generate'
+  Rendered pages/index.html.erb within layouts/application (Duration: 29.7ms | Allocations: 10147)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: b82825fdefd044fc202c
+Version: webpack 4.44.2
+Time: 820ms
+Built at: 2021-01-11 16:13:05
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-29b81a3cd4425bdbdaf3.js    148 KiB  application  [emitted] [immutable]  application
+js/application-29b81a3cd4425bdbdaf3.js.map    164 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-29b81a3cd4425bdbdaf3.js js/application-29b81a3cd4425bdbdaf3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 585 bytes {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 516 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2641.4ms | Allocations: 24284)
+Completed 200 OK in 2643ms (Views: 2642.2ms | ActiveRecord: 2.8ms | Allocations: 24967)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:13:05 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:13:05 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (7fde68c3-e8f0-49ab-9e35-837932c70ea5)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:13:23 -0800
+RoomChannel stopped streaming from room_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:13:23 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 834)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 3be61e43828224ba9212
+Version: webpack 4.44.2
+Time: 771ms
+Built at: 2021-01-11 16:13:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-abbce6c886111a1cf3db.js    153 KiB  application  [emitted] [immutable]  application
+js/application-abbce6c886111a1cf3db.js.map    164 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-abbce6c886111a1cf3db.js js/application-abbce6c886111a1cf3db.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 5.33 KiB {application} [optional] [built] [failed] [1 error]
+[./app/javascript/channels/room_channel.js] 516 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+WARNING in ./app/javascript/channels/java_runner_channel.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/app/javascript/channels/java_runner_channel.js: Unexpected token, expected ";" (5:80)
+
+  3 | document.addEventListener('turbolinks:load', () => {
+  4 | 
+> 5 |   const userId = document.getElementById('user-id').getAttribute('data-user-id'));
+    |                                                                                 ^
+  6 | 
+  7 |   consumer.subscriptions.create({channel: "JavaRunnerChannel", user_id: userId}, {
+  8 |     connected() {
+    at Parser._raise (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:748:17)
+    at Parser.raiseWithData (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:741:17)
+    at Parser.raise (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:735:17)
+    at Parser.unexpected (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Parser.semicolon (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:9083:40)
+    at Parser.parseVarStatement (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:12152:10)
+    at Parser.parseStatementContent (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:11743:21)
+    at Parser.parseStatement (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:11676:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:12258:25)
+    at Parser.parseBlockBody (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:12249:10)
+    at Parser.parseBlock (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:12233:10)
+    at Parser.parseFunctionBody (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:11221:24)
+    at Parser.parseArrowExpression (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:11193:10)
+    at Parser.parseParenAndDistinguishExpression (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10766:12)
+    at Parser.parseExprAtom (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10470:21)
+    at Parser.parseExprSubscripts (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Parser.parseUpdate (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Parser.parseMaybeUnary (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Parser.parseExprOps (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Parser.parseMaybeConditional (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Parser.parseMaybeAssign (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:9926:21)
+    at allowInAnd (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:9893:39)
+    at Parser.allowInAnd (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:11547:12)
+    at Parser.parseMaybeAssignAllowIn (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:9893:17)
+    at Parser.parseExprListItem (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:11309:18)
+    at Parser.parseCallExpressionArguments (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10350:22)
+    at Parser.parseCoverCallAndAsyncArrowHead (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10258:29)
+    at Parser.parseSubscript (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10194:19)
+    at Parser.parseSubscripts (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10167:19)
+    at Parser.parseExprSubscripts (/Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/node_modules/@babel/parser/lib/index.js:10156:17)
+ @ ./app/javascript/channels sync _channel\.js$ ./java_runner_channel.js
+ @ ./app/javascript/channels/index.js
+ @ ./app/javascript/packs/application.js
+
+  Rendered layout layouts/application.html.erb (Duration: 2366.5ms | Allocations: 6556)
+Completed 200 OK in 2368ms (Views: 2366.8ms | ActiveRecord: 0.2ms | Allocations: 7001)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:13:39 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 693)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 58d4fd12e598beda951d
+Version: webpack 4.44.2
+Time: 773ms
+Built at: 2021-01-11 16:13:41
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9ae77ef16841eafbb985.js    148 KiB  application  [emitted] [immutable]  application
+js/application-9ae77ef16841eafbb985.js.map    164 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9ae77ef16841eafbb985.js js/application-9ae77ef16841eafbb985.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 585 bytes {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 516 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2392.9ms | Allocations: 6157)
+Completed 200 OK in 2394ms (Views: 2393.3ms | ActiveRecord: 0.1ms | Allocations: 6596)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:13:41 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:13:41 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (75f8114f-4b0d-4221-b02f-4f96960d772f)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:13:56 -0800
+RoomChannel stopped streaming from room_channel_1
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:13:56 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 4571)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 8502)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.9ms | Allocations: 9097)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:13:57 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:13:57 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (12afef88-3a25-44c8-ad49-cd5f02d663f5)
+RoomChannel is transmitting the subscription confirmation
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:15:00 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/user.rb:5:in `generate'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:11:in `generate'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "user_2"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:11:in `generate'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "user_2"], ["created_at", "2021-01-12 00:15:00.141532"], ["updated_at", "2021-01-12 00:15:00.141532"]]
+  ↳ app/models/user.rb:11:in `generate'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:11:in `generate'
+  Rendered pages/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 4367)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 8303)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 2.1ms | Allocations: 8685)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:15:00 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:15:00 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (683f8ecd-b620-40ff-ae3f-fe32583f1503)
+RoomChannel is transmitting the subscription confirmation
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_2
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:15:23 -0800
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 5405)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 11608)
+Completed 200 OK in 51ms (Views: 36.2ms | ActiveRecord: 0.7ms | Allocations: 15898)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:15:23 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:15:23 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (bd88c85e-da8b-4889-b735-aef1c8fd08e8)
+RoomChannel is transmitting the subscription confirmation
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_2
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:15:24 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:15:24 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (ea3bc6c2-682b-478f-9f93-0b2082136fc7)
+RoomChannel is transmitting the subscription confirmation
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:16:20 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_2
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:16:22 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:16:22 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 701)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4630)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms | Allocations: 5072)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:16:22 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:16:22 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (8d75c3d9-42f7-456f-9010-44791c9180f3)
+RoomChannel is transmitting the subscription confirmation
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:16:38 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:16:38 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 700)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 7d036d87d2ca3d330b1e
+Version: webpack 4.44.2
+Time: 878ms
+Built at: 2021-01-11 16:16:41
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b50849294c23902d78cb.js    148 KiB  application  [emitted] [immutable]  application
+js/application-b50849294c23902d78cb.js.map    164 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b50849294c23902d78cb.js js/application-b50849294c23902d78cb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 585 bytes {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2746.2ms | Allocations: 6189)
+Completed 200 OK in 2748ms (Views: 2746.6ms | ActiveRecord: 0.1ms | Allocations: 6630)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:16:41 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:16:41 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (c8550ef1-7277-4068-a33d-8673da143022)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:53:27 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 16:53:27 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 4270)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 47645e3106f2760247a8
+Version: webpack 4.44.2
+Time: 890ms
+Built at: 2021-01-11 16:53:30
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f845d9ab79fccff3a0d7.js    149 KiB  application  [emitted] [immutable]  application
+js/application-f845d9ab79fccff3a0d7.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f845d9ab79fccff3a0d7.js js/application-f845d9ab79fccff3a0d7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 867 bytes {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2693.3ms | Allocations: 9898)
+Completed 200 OK in 2697ms (Views: 2695.6ms | ActiveRecord: 0.7ms | Allocations: 11100)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 16:53:30 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 16:53:30 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (6e2b2892-d0ea-47af-b6ec-6b90ef525c38)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:34:32 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 17:34:32 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 4173)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: ac48f18c408ba60b9311
+Version: webpack 4.44.2
+Time: 873ms
+Built at: 2021-01-11 17:34:34
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bcd4d7479128b3dd31e1.js    149 KiB  application  [emitted] [immutable]  application
+js/application-bcd4d7479128b3dd31e1.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bcd4d7479128b3dd31e1.js js/application-bcd4d7479128b3dd31e1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.1 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2756.5ms | Allocations: 9457)
+Completed 200 OK in 2758ms (Views: 2757.5ms | ActiveRecord: 0.8ms | Allocations: 10052)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 17:34:35 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:34:35 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (6730cf16-a065-43a9-b9fc-d5232f55f384)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {public static void main(String[] args) {\t\tSystem.out.println(\"Hello World\")\n\t}\n}\n"})
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"JavaRunnerChannel\",\"user_id\":\"1\"}", "data"=>"{\"filename\":\"HelloWorld.java\",\"text\":\"public class HelloWorld {public static void main(String[] args) {\\t\\tSystem.out.println(\\\"Hello World\\\")\\n\\t}\\n}\\n\",\"action\":\"run_program\"}"}) [NoMethodError - undefined method `filename' for #<Hash:0x00007fed36ee5400>]: /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/app/channels/java_runner_channel.rb:12:in `run_program' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:268:in `public_send' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:268:in `dispatch_action' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:170:in `block in perform_action' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-6.1.0/lib/active_support/notifications.rb:205:in `instrument'
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:35:07 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 17:35:07 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4559)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 8469)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 1.5ms | Allocations: 9064)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 17:35:08 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:35:08 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (68b3fd2b-a6f5-4e08-a770-ad55935549cf)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {public static void main(String[] args) {\t\tSystem.out.println(\"Hello World\")\n\t}\n}\n"})
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"JavaRunnerChannel\",\"user_id\":\"1\"}", "data"=>"{\"filename\":\"HelloWorld.java\",\"text\":\"public class HelloWorld {public static void main(String[] args) {\\t\\tSystem.out.println(\\\"Hello World\\\")\\n\\t}\\n}\\n\",\"action\":\"run_program\"}"}) [NameError - undefined local variable or method `current_user' for #<JavaRunnerChannel:0x00007fed389305f8>]: /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/app/channels/java_runner_channel.rb:12:in `run_program' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:268:in `public_send' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:268:in `dispatch_action' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:170:in `block in perform_action' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-6.1.0/lib/active_support/notifications.rb:205:in `instrument'
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 17:35:29 -0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:35:29 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (eab1739f-b04a-43ff-bb45-49c99a804617)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {public static void main(String[] args) {\t\tSystem.out.println(\"Hello World\")\n\t}\n}\n"})
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"JavaRunnerChannel\",\"user_id\":\"1\"}", "data"=>"{\"filename\":\"HelloWorld.java\",\"text\":\"public class HelloWorld {public static void main(String[] args) {\\t\\tSystem.out.println(\\\"Hello World\\\")\\n\\t}\\n}\\n\",\"action\":\"run_program\"}"}) [NameError - undefined local variable or method `current_user' for #<JavaRunnerChannel:0x00007fc11228f318>]: /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/app/channels/java_runner_channel.rb:12:in `run_program' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:268:in `public_send' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:268:in `dispatch_action' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:170:in `block in perform_action' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-6.1.0/lib/active_support/notifications.rb:205:in `instrument'
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:36:31 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 17:36:31 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 6273)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 9dbd9824171425dd1e8d
+Version: webpack 4.44.2
+Time: 862ms
+Built at: 2021-01-11 17:36:34
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-70531680f75a85941936.js    149 KiB  application  [emitted] [immutable]  application
+js/application-70531680f75a85941936.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-70531680f75a85941936.js js/application-70531680f75a85941936.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.09 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2731.8ms | Allocations: 13996)
+Completed 200 OK in 2752ms (Views: 2736.8ms | ActiveRecord: 1.4ms | Allocations: 18284)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-11 17:37:10 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 688)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: b5c29668c80887071214
+Version: webpack 4.44.2
+Time: 871ms
+Built at: 2021-01-11 17:37:12
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ce86a4c7ef172a4f1205.js    149 KiB  application  [emitted] [immutable]  application
+js/application-ce86a4c7ef172a4f1205.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ce86a4c7ef172a4f1205.js js/application-ce86a4c7ef172a4f1205.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.12 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2606.8ms | Allocations: 6144)
+Completed 200 OK in 2608ms (Views: 2607.2ms | ActiveRecord: 0.2ms | Allocations: 6586)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 17:37:12 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:37:12 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (f888cb4c-2a81-4ea3-a760-7b604d9c6a51)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:37:32 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 17:37:32 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 700)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 38677574a7f2785f3485
+Version: webpack 4.44.2
+Time: 837ms
+Built at: 2021-01-11 17:37:34
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-81a7da9c78e2362e20ec.js    149 KiB  application  [emitted] [immutable]  application
+js/application-81a7da9c78e2362e20ec.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-81a7da9c78e2362e20ec.js js/application-81a7da9c78e2362e20ec.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.12 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2500.5ms | Allocations: 6229)
+Completed 200 OK in 2502ms (Views: 2500.9ms | ActiveRecord: 0.2ms | Allocations: 6669)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 17:37:34 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:37:34 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (b3304be7-ef74-4f73-913b-782678d83404)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {public static void main(String[] args) {\t\tSystem.out.println(\"Hello World\")\n\t}\n}\n", "user_id"=>"1"})
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"JavaRunnerChannel\",\"user_id\":\"1\"}", "data"=>"{\"filename\":\"HelloWorld.java\",\"text\":\"public class HelloWorld {public static void main(String[] args) {\\t\\tSystem.out.println(\\\"Hello World\\\")\\n\\t}\\n}\\n\",\"user_id\":\"1\",\"action\":\"run_program\"}"}) [NoMethodError - undefined method `end_with?' for nil:NilClass]: /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/app/lib/java_runner_helper.rb:5:in `run_java_program' | /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/app/channels/java_runner_channel.rb:12:in `run_program' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:268:in `public_send' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:268:in `dispatch_action' | /Users/mollymoen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.1.0/lib/action_cable/channel/base.rb:170:in `block in perform_action'
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 17:39:38 -0800
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:39:38 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (33353046-5390-4eee-9de4-2f3c1e199200)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {public static void main(String[] args) {\t\tSystem.out.println(\"Hello World\")\n\t}\n}\n", "user_id"=>"1"})
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210111-17985-1fmh6wg/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210111-17985-1fmh6wg/HelloWorld.java"} (via streamed from java_runner_channel_1)
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"", :stderr=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210111-17985-1fmh6wg/HelloWorld.java:1: error: ';' expected\npublic class HelloWorld {public static void main(String[] args) {\t\tSystem.out.println(\"Hello World\")\n                                                                 \t\t                                 ^\n1 error\n", :status=>#<Process::Status: pid 18003 exit 1>}
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210111-17985-1fmh6wg/HelloWorld.java:1: error: ';' expected\npublic class HelloWorld {public static void main(String[] args) {\t\tSystem.out.println(\"Hello World\")\n                                                    ... (via streamed from java_runner_channel_1)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_1)
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"", :stderr=>"Error: Could not find or load main class HelloWorld\n", :status=>#<Process::Status: pid 18005 exit 1>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"Error: Could not find or load main class HelloWorld\n", "status"=>{"exitstatus"=>1, "pid"=>18005}} (via streamed from java_runner_channel_1)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:40:22 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-11 17:40:22 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 5424)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 0c2a8292d332b6106ed5
+Version: webpack 4.44.2
+Time: 886ms
+Built at: 2021-01-11 17:40:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4a41e71e311e8d1c3f33.js    149 KiB  application  [emitted] [immutable]  application
+js/application-4a41e71e311e8d1c3f33.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4a41e71e311e8d1c3f33.js js/application-4a41e71e311e8d1c3f33.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.12 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2609.5ms | Allocations: 13126)
+Completed 200 OK in 2630ms (Views: 2613.7ms | ActiveRecord: 1.1ms | Allocations: 17416)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-11 17:40:25 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-11 17:40:25 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (43b36b41-6006-458d-8dbb-9a88a747ce52)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {public static void main(String[] args) {\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>"1"})
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210111-17985-8j8kxw/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210111-17985-8j8kxw/HelloWorld.java"} (via streamed from java_runner_channel_1)
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 18062 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>18062}} (via streamed from java_runner_channel_1)
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_1)
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 18063 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>18063}} (via streamed from java_runner_channel_1)
+Started GET "/" for 127.0.0.1 at 2021-01-12 08:10:22 -0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 5405)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: f4f1d9375fc9c8ffc9d6
+Version: webpack 4.44.2
+Time: 876ms
+Built at: 2021-01-12 08:10:24
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a9fe3c126ebff17da66f.js    149 KiB  application  [emitted] [immutable]  application
+js/application-a9fe3c126ebff17da66f.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a9fe3c126ebff17da66f.js js/application-a9fe3c126ebff17da66f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.13 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2540.6ms | Allocations: 13008)
+Completed 200 OK in 2562ms (Views: 2545.3ms | ActiveRecord: 1.2ms | Allocations: 17299)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-12 08:10:41 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 701)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4630)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 5073)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-12 08:14:25 -0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 5405)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 11608)
+Completed 200 OK in 57ms (Views: 42.3ms | ActiveRecord: 1.1ms | Allocations: 15898)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-12 08:14:45 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 701)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4630)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 5073)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 08:15:01 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:15:01 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (333311e3-705b-4c30-a060-b4e3deeedd1c)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {public static void main(String[] args) {\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>"1"})
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-19477-eajlx0/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-19477-eajlx0/HelloWorld.java"} (via streamed from java_runner_channel_1)
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 19551 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>19551}} (via streamed from java_runner_channel_1)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_1)
+[ActionCable] Broadcasting to java_runner_channel_1: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 19552 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>19552}} (via streamed from java_runner_channel_1)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:18:23 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-12 08:18:23 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 687)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 05709b60bf7be50943f2
+Version: webpack 4.44.2
+Time: 805ms
+Built at: 2021-01-12 08:18:26
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-328c8f6f6d4e189ac554.js    149 KiB  application  [emitted] [immutable]  application
+js/application-328c8f6f6d4e189ac554.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-328c8f6f6d4e189ac554.js js/application-328c8f6f6d4e189ac554.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.13 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2544.3ms | Allocations: 6176)
+Completed 200 OK in 2546ms (Views: 2544.8ms | ActiveRecord: 0.2ms | Allocations: 6613)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 08:18:26 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:18:26 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (847ca0a9-d818-4d22-aa55-fcdb37917a06)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:18:42 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-12 08:18:42 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 700)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: a6d9d75bc15c3fa0b773
+Version: webpack 4.44.2
+Time: 820ms
+Built at: 2021-01-12 08:18:44
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d08526a6cd3936d1d16b.js    149 KiB  application  [emitted] [immutable]  application
+js/application-d08526a6cd3936d1d16b.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d08526a6cd3936d1d16b.js js/application-d08526a6cd3936d1d16b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.16 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2310.5ms | Allocations: 6161)
+Completed 200 OK in 2312ms (Views: 2310.9ms | ActiveRecord: 0.2ms | Allocations: 6601)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 08:18:44 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:18:44 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (d3a92f7a-da0d-4255-8cdc-b7f107be89d2)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:20:51 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-12 08:20:51 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 700)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 4d25d9b908fa932ebc47
+Version: webpack 4.44.2
+Time: 818ms
+Built at: 2021-01-12 08:20:53
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c91868aef682035b96ac.js    149 KiB  application  [emitted] [immutable]  application
+js/application-c91868aef682035b96ac.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c91868aef682035b96ac.js js/application-c91868aef682035b96ac.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.27 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2602.3ms | Allocations: 6158)
+Completed 200 OK in 2603ms (Views: 2602.7ms | ActiveRecord: 0.1ms | Allocations: 6598)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 08:20:53 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:20:53 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (2b84ab4f-ebf4-4e81-8c6a-ad9e1e3d88bd)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:21:13 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-12 08:21:13 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 687)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 7958a3212b293c8e1471
+Version: webpack 4.44.2
+Time: 892ms
+Built at: 2021-01-12 08:21:16
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3adc18124edba004b2d0.js    149 KiB  application  [emitted] [immutable]  application
+js/application-3adc18124edba004b2d0.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3adc18124edba004b2d0.js js/application-3adc18124edba004b2d0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.31 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2590.4ms | Allocations: 6219)
+Completed 200 OK in 2591ms (Views: 2590.7ms | ActiveRecord: 0.2ms | Allocations: 6656)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 08:21:16 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:21:16 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (03108fee-2245-4955-b7c4-db6756e26fd6)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:24:26 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/" for 127.0.0.1 at 2021-01-12 08:24:26 -0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 687)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 108ab0f61e667b6cc9aa
+Version: webpack 4.44.2
+Time: 827ms
+Built at: 2021-01-12 08:24:29
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-7a6cd66771280bf8a78a.js    149 KiB  application  [emitted] [immutable]  application
+js/application-7a6cd66771280bf8a78a.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-7a6cd66771280bf8a78a.js js/application-7a6cd66771280bf8a78a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.56 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2606.7ms | Allocations: 6145)
+Completed 200 OK in 2608ms (Views: 2607.1ms | ActiveRecord: 0.2ms | Allocations: 6582)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 08:24:29 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 08:24:29 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (87f2492a-7f90-40af-9c4d-e440d68507af)
+Started GET "/" for 127.0.0.1 at 2021-01-12 14:10:17 -0800
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  Rendered pages/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5407)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mollymoen/Documents/GitHub/java-ide/websocket-prototype/java-processor/public/packs
+[Webpacker] Hash: 3801138fe30eeae5fa71
+Version: webpack 4.44.2
+Time: 1044ms
+Built at: 2021-01-12 14:10:20
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b977f025f3f5ab37d9c9.js    149 KiB  application  [emitted] [immutable]  application
+js/application-b977f025f3f5ab37d9c9.js.map    165 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b977f025f3f5ab37d9c9.js js/application-b977f025f3f5ab37d9c9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 211 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/java_runner_channel.js] 1.53 KiB {application} [optional] [built]
+[./app/javascript/channels/room_channel.js] 505 bytes {application} [optional] [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2952.5ms | Allocations: 13011)
+Completed 200 OK in 2969ms (Views: 2955.8ms | ActiveRecord: 0.9ms | Allocations: 17302)
+
+
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 14:10:20 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 14:10:20 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (a68b1e78-d779-4914-a53a-2157dbaf6c31)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 15:53:44 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_1
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 15:53:45 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 15:53:45 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (8653d906-80d3-4d66-b7b8-e9249142f007)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:20:24 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:20:24 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (400e1624-22a3-4283-827a-ef5b05af9959)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_714
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:20:43 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_714
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:20:43 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:20:43 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (080a5793-2bfe-4bb9-b8c0-42e981060b07)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_896
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:21:05 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:21:05 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (75d8bbb5-ffaa-441c-b1bd-7ae29eac0155)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_896
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:21:30 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_896
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:21:30 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_896
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:21:30 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:21:30 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (e6348861-6b05-4903-bbbe-eedcb06afc05)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_705
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:22:21 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:22:21 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (0975b123-0d2c-4431-849a-fbd423926d4c)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_705
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:22:23 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_705
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:22:23 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_705
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:22:23 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:22:23 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (8e5c6e65-9b0f-4450-b75f-05ee18907596)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_959
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:23:04 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:23:04 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (5026b887-d99d-4eb4-bb20-5b6435df160b)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_959
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:23:11 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_959
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:23:11 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_959
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:23:11 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:23:11 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (ab8e9cd9-a265-477b-b6ce-40dac09eebd7)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_544
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:24:33 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:24:33 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (1139f983-aa1c-454e-9bc6-329045e5e01a)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_544
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:24:33 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:24:33 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (93700085-a138-4681-8903-387a793b0311)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_544
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:24:35 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:24:35 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (52b4ccdf-58d4-40d7-bd35-c43cc810568e)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_544
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:24:38 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_544
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:24:38 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:24:38 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_544
+JavaRunnerChannel stopped streaming from java_runner_channel_544
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:24:38 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_544
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:24:39 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:24:39 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (00615bf5-da4a-4cfb-8f20-8ac66c004635)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_124
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:31:04 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:31:04 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (4ac92ea5-1bc3-4c8d-9601-3220ca5f16af)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_124
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:31:08 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_124
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:31:08 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_124
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:31:08 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:31:08 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (13728569-a031-4bf8-a1d1-3846e96d6703)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_265
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:31:19 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:31:19 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (c3831ffc-f756-44a0-915d-24c8ce1e7bd1)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_265
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:31:24 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_265
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:31:24 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_265
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:31:24 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:31:24 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (a0997d1a-b652-4773-bc70-85028e3e005b)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_604
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:32:09 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:32:09 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (84fdff14-c69f-41db-9d0e-c6a1c564a4f9)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_604
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:32:12 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_604
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:32:12 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_604
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:32:12 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:32:12 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (541e302e-01c0-4a7b-910a-dc7270712c8f)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_693
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:33:01 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:33:01 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (1774ed36-2548-46da-83b6-30f883ae84bf)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_693
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:33:09 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_693
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:33:09 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_693
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:33:09 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:33:09 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (f4a9c536-a791-4663-86a7-3dada59e7147)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_451
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:35:10 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:35:10 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (737ff035-49aa-4053-b5d6-27b54a8bd8a3)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_451
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:35:14 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_451
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:35:14 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_451
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:35:14 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:35:14 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (3576b3f5-775f-4376-84b4-11f7af37ad3b)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_361
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:35:30 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:35:30 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (9c977217-b2d9-45a4-bd3e-7a5dd5529b63)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_361
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:35:39 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:35:39 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_361
+JavaRunnerChannel stopped streaming from java_runner_channel_361
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:35:39 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:35:39 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (89abc779-a26b-4a5a-8f20-66d4a5c6893e)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_236
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:36:55 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:36:55 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (a25777c2-d0dc-4e78-bdac-b234b4c54c24)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_236
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:38:42 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:38:42 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (f0d9dd1c-251d-4d00-9f8b-8e35190151c0)
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:38:42 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:38:42 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (57a303a9-d4ca-4540-99b5-481851763bc9)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_236
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_236
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:39:00 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_236
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:39:00 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_236
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:39:00 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_236
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:39:00 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_236
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:39:01 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:39:01 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (dcef6a10-5307-4e84-bc89-23e5b46fa447)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_374
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:40:44 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:40:44 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (4b71e0e6-1e35-4efb-b0c9-a682bcba4b2f)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_374
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:45:07 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:45:07 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (499ee94e-83f3-47e8-ada3-a2bd084feeb7)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_374
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:45:14 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:45:14 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (6eabb0d8-b40e-4a66-b56c-c78e3f29bf10)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_374
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:45:17 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:45:17 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_374
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:45:17 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_374
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:45:17 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_374
+JavaRunnerChannel stopped streaming from java_runner_channel_374
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:45:18 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:45:18 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (f4805e71-81b0-4c71-aa43-dd9660b8778b)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_206
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:45:45 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:45:45 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (71cf8672-e87a-493f-ad52-2e3d88caddf1)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_206
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:45:45 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:45:45 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (7b821c44-b48e-403e-b3d4-c082a5d67063)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_206
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:46:05 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:05 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (c6c813e6-0e4a-484b-97b4-1f56bd6d34bc)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_206
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:46:05 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:05 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (6c8713a5-fd03-433b-92c1-cb449fe66144)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_206
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:46:24 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:24 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (5124c5d7-63b5-4a44-a29e-ebce6148644d)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_206
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:46:32 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:32 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (81c59b3b-1f84-4ae7-b5ba-cb84bb8bea0c)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_206
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:36 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:36 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:36 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:36 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_206
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:36 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_206
+JavaRunnerChannel stopped streaming from java_runner_channel_206
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:36 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_206
+JavaRunnerChannel stopped streaming from java_runner_channel_206
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:36 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_206
+JavaRunnerChannel stopped streaming from java_runner_channel_206
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:46:36 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:46:36 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (26a673d7-34ca-4c2e-8f3e-d387d33ee19a)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_993
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:52:03 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:52:03 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (857a85f8-a3ed-4b6e-979c-7dae0802d739)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_993
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:53:33 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:53:33 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (a38d3629-440f-46fd-bf6f-2282874c2493)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_993
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:53:54 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:53:54 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (1bd02f2a-6b99-45e3-9759-38c9a2188c26)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_993
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:54:28 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:54:28 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (d7ca4d0f-ae93-493e-a7da-92039d51e3eb)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_993
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:54:32 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:54:32 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_993
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:54:32 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_993
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:54:32 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:54:32 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_993
+JavaRunnerChannel stopped streaming from java_runner_channel_993
+JavaRunnerChannel stopped streaming from java_runner_channel_993
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:54:32 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:54:32 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (8f16c230-63ab-41eb-85ad-a447639b7c92)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_536
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:54:58 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:54:58 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (7ee779e2-79f2-43b5-b8ee-c9bc39049123)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_536
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:56:22 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:56:22 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (fcc47204-1910-40c6-a4ca-1e886374bf41)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_536
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:56:26 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_536
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:56:26 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_536
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:56:26 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_536
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:56:26 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:56:26 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (4fa55547-14d5-4033-84de-13f6a2cf6a03)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_938
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>" public class HelloWorld { \tpublic static void main(String[] args) { \t\tSystem.out.println(\"Hello World\"); \t} }", "user_id"=>938})
+[ActionCable] Broadcasting to java_runner_channel_938: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1d4bdt6/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1d4bdt6/HelloWorld.java"} (via streamed from java_runner_channel_938)
+[ActionCable] Broadcasting to java_runner_channel_938: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31043 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_938: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31043}} (via streamed from java_runner_channel_938)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_938)
+[ActionCable] Broadcasting to java_runner_channel_938: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31044 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31044}} (via streamed from java_runner_channel_938)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:56:43 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_938
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:56:44 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:56:44 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (e86c5d2f-6215-4b7b-833e-c380dd4b0468)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_245
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>" public class HelloWorld { \tpublic static void main(String[] args) { \t\tSystem.out.println(\"Hello World\"); \t} }", "user_id"=>245})
+[ActionCable] Broadcasting to java_runner_channel_245: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1l8p5yk/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1l8p5yk/HelloWorld.java"} (via streamed from java_runner_channel_245)
+[ActionCable] Broadcasting to java_runner_channel_245: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31073 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_245: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31073}} (via streamed from java_runner_channel_245)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_245)
+[ActionCable] Broadcasting to java_runner_channel_245: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31074 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31074}} (via streamed from java_runner_channel_245)
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:59:09 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:59:09 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (a11de7f9-ade6-44df-973d-0280ed019dc2)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_245
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:59:10 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_245
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:59:10 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_245
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:59:10 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:59:10 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (c7f93a1b-c10a-4251-8a9b-cfdd0fba4ae2)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_868
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>" public class HelloWorld { \tpublic static void main(String[] args) { \t\tSystem.out.println(\"Hello World\"); \t} }", "user_id"=>868})
+[ActionCable] Broadcasting to java_runner_channel_868: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-18ppmnm/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-18ppmnm/HelloWorld.java"} (via streamed from java_runner_channel_868)
+[ActionCable] Broadcasting to java_runner_channel_868: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31165 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_868: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_868)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31165}} (via streamed from java_runner_channel_868)
+[ActionCable] Broadcasting to java_runner_channel_868: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31166 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31166}} (via streamed from java_runner_channel_868)
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:59:36 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:59:36 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (385548cc-61cf-41ba-af43-1300b565abfb)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_868
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:59:38 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:59:38 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (eb130199-80d6-47b4-b12f-c05e88c046b1)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_868
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:59:50 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:59:50 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (00d2c4c6-dcd2-48aa-8d32-351d4bf09a31)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_868
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 16:59:58 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 16:59:58 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (f66595ae-fa63-42e6-97cc-b0c9a150a167)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_868
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 17:00:49 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:00:49 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (64f97159-910b-4dca-ba23-726545d2b289)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_868
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:00:49 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:00:49 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_868
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:00:49 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:00:49 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_868
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:00:49 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_868
+JavaRunnerChannel stopped streaming from java_runner_channel_868
+JavaRunnerChannel stopped streaming from java_runner_channel_868
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:00:49 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_868
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 17:00:50 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:00:50 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (7fa9ed8b-01eb-4688-bfff-0dad5353ab3c)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_573
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>573})
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1qpndpb/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1qpndpb/HelloWorld.java"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31283 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31283}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31284 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31284}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\")\n\t}\n}\n", "user_id"=>573})
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-5f4l44/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-5f4l44/HelloWorld.java"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"", :stderr=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-5f4l44/HelloWorld.java:4: error: ';' expected\n\t\tSystem.out.println(\"Hello World\")\n\t\t                                 ^\n1 error\n", :status=>#<Process::Status: pid 31335 exit 1>}
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-5f4l44/HelloWorld.java:4: error: ';' expected\n\t\tSystem.out.println(\"Hello World\")\n\t\t                                 ^\n1 error\n", "status"=>{"exitstatus"=>1, "pid"=>31335}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"", :stderr=>"Error: Could not find or load main class HelloWorld\n", :status=>#<Process::Status: pid 31336 exit 1>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"Error: Could not find or load main class HelloWorld\n", "status"=>{"exitstatus"=>1, "pid"=>31336}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>573})
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-bk4hl1/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-bk4hl1/HelloWorld.java"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31339 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31339}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31340 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31340}} (via streamed from java_runner_channel_573)
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 17:01:45 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:01:45 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (0e7aea85-b9da-463b-9f4b-94d1e1e7df7a)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_573
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 17:02:37 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:02:37 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (717d9a17-5073-41d9-adcb-53f3341933bb)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_573
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>573})
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1vm1nnj/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1vm1nnj/HelloWorld.java"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1vm1nnj/HelloWorld.java"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1vm1nnj/HelloWorld.java"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31406 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31406}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31406}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31406}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31407 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31407}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31407}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31407}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\")\n\t}\n}\n", "user_id"=>573})
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-12rbfir/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-12rbfir/HelloWorld.java"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-12rbfir/HelloWorld.java"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-12rbfir/HelloWorld.java"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"", :stderr=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-12rbfir/HelloWorld.java:4: error: ';' expected\n\t\tSystem.out.println(\"Hello World\")\n\t\t                                 ^\n1 error\n", :status=>#<Process::Status: pid 31408 exit 1>}
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-12rbfir/HelloWorld.java:4: error: ';' expected\n\t\tSystem.out.println(\"Hello World\")\n\t\t                                 ^\n1 error\n", "status"=>{"exitstatus"=>1, "pid"=>31408}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-12rbfir/HelloWorld.java:4: error: ';' expected\n\t\tSystem.out.println(\"Hello World\")\n\t\t                                 ^\n1 error\n", "status"=>{"exitstatus"=>1, "pid"=>31408}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-12rbfir/HelloWorld.java:4: error: ';' expected\n\t\tSystem.out.println(\"Hello World\")\n\t\t                                 ^\n1 error\n", "status"=>{"exitstatus"=>1, "pid"=>31408}} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"", :stderr=>"Error: Could not find or load main class HelloWorld\n", :status=>#<Process::Status: pid 31409 exit 1>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"Error: Could not find or load main class HelloWorld\n", "status"=>{"exitstatus"=>1, "pid"=>31409}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"Error: Could not find or load main class HelloWorld\n", "status"=>{"exitstatus"=>1, "pid"=>31409}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"Error: Could not find or load main class HelloWorld\n", "status"=>{"exitstatus"=>1, "pid"=>31409}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>573})
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1yh545n/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1yh545n/HelloWorld.java"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1yh545n/HelloWorld.java"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1yh545n/HelloWorld.java"} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31413 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31413}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31413}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31413}} (via streamed from java_runner_channel_573)
+[ActionCable] Broadcasting to java_runner_channel_573: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31414 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31414}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31414}} (via streamed from java_runner_channel_573)
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31414}} (via streamed from java_runner_channel_573)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:04:01 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_573
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:04:01 -0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:04:01 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_573
+JavaRunnerChannel stopped streaming from java_runner_channel_573
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 17:04:01 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:04:01 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (a10d3907-9523-4106-975b-9d2acad1aaee)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_706
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>706})
+[ActionCable] Broadcasting to java_runner_channel_706: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-ouakqq/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-ouakqq/HelloWorld.java"} (via streamed from java_runner_channel_706)
+[ActionCable] Broadcasting to java_runner_channel_706: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31419 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_706: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31419}} (via streamed from java_runner_channel_706)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_706)
+[ActionCable] Broadcasting to java_runner_channel_706: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31420 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31420}} (via streamed from java_runner_channel_706)
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>706})
+[ActionCable] Broadcasting to java_runner_channel_706: {:stdout=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-8co7up/HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac /var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-8co7up/HelloWorld.java"} (via streamed from java_runner_channel_706)
+[ActionCable] Broadcasting to java_runner_channel_706: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31469 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_706: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31469}} (via streamed from java_runner_channel_706)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_706)
+[ActionCable] Broadcasting to java_runner_channel_706: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31471 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31471}} (via streamed from java_runner_channel_706)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:05:06 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_706
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 17:05:06 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:05:07 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (b0d3ec7c-cf18-484f-acbf-ee58ecd7fe4a)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_831
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>831})
+[ActionCable] Broadcasting to java_runner_channel_831: {:stdout=>"javac HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac HelloWorld.java"} (via streamed from java_runner_channel_831)
+[ActionCable] Broadcasting to java_runner_channel_831: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31478 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_831: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31478}} (via streamed from java_runner_channel_831)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_831)
+[ActionCable] Broadcasting to java_runner_channel_831: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31479 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31479}} (via streamed from java_runner_channel_831)
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 17:05:15 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:05:15 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (7ffd2c3b-6b4b-45ea-82a8-52b0d6a1329c)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:05:19 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_831
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 17:05:19 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:05:19 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (60d53d04-f623-4d90-9c3f-9aae56a51700)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_578
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>578})
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"javac HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac HelloWorld.java"} (via streamed from java_runner_channel_578)
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31494 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_578)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31494}} (via streamed from java_runner_channel_578)
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31495 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31495}} (via streamed from java_runner_channel_578)
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World!!!!!\");\n\t}\n}\n", "user_id"=>578})
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"javac HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac HelloWorld.java"} (via streamed from java_runner_channel_578)
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31497 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31497}} (via streamed from java_runner_channel_578)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_578)
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"Hello World!!!!!\n", :stderr=>"", :status=>#<Process::Status: pid 31498 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World!!!!!\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31498}} (via streamed from java_runner_channel_578)
+JavaRunnerChannel#run_program({"filename"=>"CSASubset.java", "text"=>"import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class CSASubset {\n\t\n\tpublic static void main(String[] args) {\n\t\tstringFunctions();\n\t\tSystem.out.println()\n\t\tintegerFunctions();\n\t\tSystem.out.println();\n\t\tdoubleFunctions();\n\t\tSystem.out.println();\n\t\tmathFunctions();\n\t\tSystem.out.println();\n\t\tarrayListFunctions();\n\t}\n\n\tpublic static void stringFunctions() {\n\t\tSystem.out.println(\"String testing...\");\n\t\tString sample = \"Hello World\";\n\t\tString sample2 = new String(sample);\n\t\tSystem.out.println(\"sample: \" + sample + \" sample2: \" + sample2);\n\n\t\tSystem.out.println(\"sample.equals(sample2) (expect true): \" + sample.equals(sample2));\n\t\tSystem.out.println(\"sample.compareTo(sample2) (expect 0): \" + sample.compareTo(sample2));\n\t\tSystem.out.println(\"sample == sample2 (expect false): \" + (sample == sample2));\n\t\tsample2 = \"a new string\";\n\t\tSystem.out.println(\"resetting sample2\");\n\t\tSystem.out.println(\"sample: \" + sample + \" sample2: \" + sample2);\n\t\tSystem.out.println(\"sample.compareTo(sample2): (expect -25): \" + sample.compareTo(sample2));\n\t\tSystem.out.println(\"sample length: (expect 11): \" + sample.length());\n\t\tSystem.out.println(\"sample2 length: (expect 12): \" + sample2.length());\n\t\tSystem.out.println(\"sample.substring(0, 5): (expect Hello): \" + sample.substring(0, 5));\n\t\tSystem.out.println(\"sample.substring(6): (expect World): \" + sample.substring(6));\n\t\tSystem.out.println(\"sample.indexOf(\\\"World\\\"): (expect 6): \" + sample.indexOf(\"World\"));\n\t}\n\t\n\tpublic static void integerFunctions() {\n\t\tSystem.out.println(\"Integer testing...\");\n\t\tint x = 5;\n\t\t@SuppressWarnings(\"deprecation\")\n\t\tInteger y = new Integer(x);\n\t\tSystem.out.println(\"y should be 5:  \" + y);\n\t\tInteger minValue = Integer.MIN_VALUE;\n\t\tInteger maxValue = Integer.MAX_VALUE;\n\t\tSystem.out.println(\"Integer min value (expect -2147483648): \" + minValue); \n\t\tSystem.out.println(\"Integer max value (expect (2147883647): \" + maxValue);\n\t\ty = 7;\n\t\tSystem.out.println(y + \" / \" + x + \" = (expect 1) \" + (y / x));\n\t\tSystem.out.println(y + \" % \" + x + \" = (expect 2) \" + (y % x));\n\t\tInteger z = 3;\n\t\tSystem.out.println(\"int value of 3 (expect 3): \" + z.intValue());\n\t}\n\t\n\t@SuppressWarnings(\"deprecation\")\n\tpublic static void doubleFunctions() {\n\t\tSystem.out.println(\"Double testing...\");\n\t\tDouble x = new Double(17.5);\n\t\tdouble xDouble = x.doubleValue();\n\t\tSystem.out.println(\"Double x (expect 17.5): \" + x);\n\t\tSystem.out.println(\"convert to double (expect 17.5): \" + xDouble);\n\t}\n\t\n\tpublic static void mathFunctions() {\n\t\tSystem.out.println(\"Math testing...\");\n\t\tSystem.out.println(\"Math.abs(9) (expect 9): \" + Math.abs(9));\n\t\tint two = 2;\n\t\tSystem.out.println(\"Math.abs(-123.5) (expect 123.5): \" + Math.abs(-123.5));\n\t\tSystem.out.println(\"Math.pow(3.5, 2) (expect 12.25): \" + Math.pow(3.5, two));\n\t\tSystem.out.println(\"Math.sqrt(9): (expect 3): \" + Math.sqrt(9));\n\t\tSystem.out.println(\"Math.sqrt(17): (expect 4.123...): \" + Math.sqrt(17));\n\t\tSystem.out.println(\"Math.random() (expect double between 0.0 and 1.0): \" + Math.random());\n\t}\n\t\n\tpublic static void arrayListFunctions() {\n\t\tArrayList<Integer> arrayList = new ArrayList<Integer>();\n\t\tSystem.out.println(\"New array list should have size 0: \" + arrayList.size());\n\t\tSystem.out.println(\"Add new element to list returns true: \" + arrayList.add(7));\n\t\tarrayList.add(15);\n\t\tarrayList.add(23);\n\t\tSystem.out.println(\"array list should now have size 3: \" + arrayList.size());\n\t\tSystem.out.println(\"arrayList.get(1) should be 15: \" + arrayList.get(1));\n\t\tarrayList.add(1, 12);\n\t\tSystem.out.println(\"After add at index, arrayList.get(1) should be 12: \" + arrayList.get(1));\n\t\tSystem.out.println(\"arrayList.get(2) should be 15: \" + arrayList.get(2));\n\t\t\n\t\tSystem.out.println(\"arrayList.set(1, 20) should return 12: \" + arrayList.set(1,  20));\n\t\tSystem.out.println(\"arrayList.get(1) should be 20: \" + arrayList.get(1));\n\t\t\n\t\tSystem.out.println(\"arrayList.remove(1) should return 20: \" + arrayList.remove(1));\n\t\tSystem.out.println(\"arrayList.get(1) should be 15: \" + arrayList.get(1));\n\t\t\n\t\tSystem.out.println(\"to string should return [7, 15, 23]: \" + arrayList.toString());\n\t\tInteger[] otherArr = new Integer[] {7, 15, 23};\n\t\tList<Integer> otherList = Arrays.asList(otherArr);\n\t\tSystem.out.println(\"two arraylists with same elements should be equal: \" + otherList.equals(arrayList));\n\t}\n}\n", "user_id"=>578})
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"javac CSASubset.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac CSASubset.java"} (via streamed from java_runner_channel_578)
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"", :stderr=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1ff4a1a/CSASubset.java:9: error: ';' expected\n\t\tSystem.out.println()\n\t\t                    ^\n1 error\n", :status=>#<Process::Status: pid 31579 exit 1>}
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"java CSASubset"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"/var/folders/m5/ylkc27xs2lg1cfd548y741d40000gn/T/d20210112-27915-1ff4a1a/CSASubset.java:9: error: ';' expected\n\t\tSystem.out.println()\n\t\t                    ^\n1 error\n", "status"=>{"exitstatus"=>1, "pid"=>31579}} (via streamed from java_runner_channel_578)
+JavaRunnerChannel transmitting {"stdout"=>"java CSASubset"} (via streamed from java_runner_channel_578)
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"", :stderr=>"Error: Could not find or load main class CSASubset\n", :status=>#<Process::Status: pid 31580 exit 1>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"Error: Could not find or load main class CSASubset\n", "status"=>{"exitstatus"=>1, "pid"=>31580}} (via streamed from java_runner_channel_578)
+JavaRunnerChannel#run_program({"filename"=>"CSASubset.java", "text"=>"import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class CSASubset {\n\t\n\tpublic static void main(String[] args) {\n\t\tstringFunctions();\n\t\tSystem.out.println();\n\t\tintegerFunctions();\n\t\tSystem.out.println();\n\t\tdoubleFunctions();\n\t\tSystem.out.println();\n\t\tmathFunctions();\n\t\tSystem.out.println();\n\t\tarrayListFunctions();\n\t}\n\n\tpublic static void stringFunctions() {\n\t\tSystem.out.println(\"String testing...\");\n\t\tString sample = \"Hello World\";\n\t\tString sample2 = new String(sample);\n\t\tSystem.out.println(\"sample: \" + sample + \" sample2: \" + sample2);\n\n\t\tSystem.out.println(\"sample.equals(sample2) (expect true): \" + sample.equals(sample2));\n\t\tSystem.out.println(\"sample.compareTo(sample2) (expect 0): \" + sample.compareTo(sample2));\n\t\tSystem.out.println(\"sample == sample2 (expect false): \" + (sample == sample2));\n\t\tsample2 = \"a new string\";\n\t\tSystem.out.println(\"resetting sample2\");\n\t\tSystem.out.println(\"sample: \" + sample + \" sample2: \" + sample2);\n\t\tSystem.out.println(\"sample.compareTo(sample2): (expect -25): \" + sample.compareTo(sample2));\n\t\tSystem.out.println(\"sample length: (expect 11): \" + sample.length());\n\t\tSystem.out.println(\"sample2 length: (expect 12): \" + sample2.length());\n\t\tSystem.out.println(\"sample.substring(0, 5): (expect Hello): \" + sample.substring(0, 5));\n\t\tSystem.out.println(\"sample.substring(6): (expect World): \" + sample.substring(6));\n\t\tSystem.out.println(\"sample.indexOf(\\\"World\\\"): (expect 6): \" + sample.indexOf(\"World\"));\n\t}\n\t\n\tpublic static void integerFunctions() {\n\t\tSystem.out.println(\"Integer testing...\");\n\t\tint x = 5;\n\t\t@SuppressWarnings(\"deprecation\")\n\t\tInteger y = new Integer(x);\n\t\tSystem.out.println(\"y should be 5:  \" + y);\n\t\tInteger minValue = Integer.MIN_VALUE;\n\t\tInteger maxValue = Integer.MAX_VALUE;\n\t\tSystem.out.println(\"Integer min value (expect -2147483648): \" + minValue); \n\t\tSystem.out.println(\"Integer max value (expect (2147883647): \" + maxValue);\n\t\ty = 7;\n\t\tSystem.out.println(y + \" / \" + x + \" = (expect 1) \" + (y / x));\n\t\tSystem.out.println(y + \" % \" + x + \" = (expect 2) \" + (y % x));\n\t\tInteger z = 3;\n\t\tSystem.out.println(\"int value of 3 (expect 3): \" + z.intValue());\n\t}\n\t\n\t@SuppressWarnings(\"deprecation\")\n\tpublic static void doubleFunctions() {\n\t\tSystem.out.println(\"Double testing...\");\n\t\tDouble x = new Double(17.5);\n\t\tdouble xDouble = x.doubleValue();\n\t\tSystem.out.println(\"Double x (expect 17.5): \" + x);\n\t\tSystem.out.println(\"convert to double (expect 17.5): \" + xDouble);\n\t}\n\t\n\tpublic static void mathFunctions() {\n\t\tSystem.out.println(\"Math testing...\");\n\t\tSystem.out.println(\"Math.abs(9) (expect 9): \" + Math.abs(9));\n\t\tint two = 2;\n\t\tSystem.out.println(\"Math.abs(-123.5) (expect 123.5): \" + Math.abs(-123.5));\n\t\tSystem.out.println(\"Math.pow(3.5, 2) (expect 12.25): \" + Math.pow(3.5, two));\n\t\tSystem.out.println(\"Math.sqrt(9): (expect 3): \" + Math.sqrt(9));\n\t\tSystem.out.println(\"Math.sqrt(17): (expect 4.123...): \" + Math.sqrt(17));\n\t\tSystem.out.println(\"Math.random() (expect double between 0.0 and 1.0): \" + Math.random());\n\t}\n\t\n\tpublic static void arrayListFunctions() {\n\t\tArrayList<Integer> arrayList = new ArrayList<Integer>();\n\t\tSystem.out.println(\"New array list should have size 0: \" + arrayList.size());\n\t\tSystem.out.println(\"Add new element to list returns true: \" + arrayList.add(7));\n\t\tarrayList.add(15);\n\t\tarrayList.add(23);\n\t\tSystem.out.println(\"array list should now have size 3: \" + arrayList.size());\n\t\tSystem.out.println(\"arrayList.get(1) should be 15: \" + arrayList.get(1));\n\t\tarrayList.add(1, 12);\n\t\tSystem.out.println(\"After add at index, arrayList.get(1) should be 12: \" + arrayList.get(1));\n\t\tSystem.out.println(\"arrayList.get(2) should be 15: \" + arrayList.get(2));\n\t\t\n\t\tSystem.out.println(\"arrayList.set(1, 20) should return 12: \" + arrayList.set(1,  20));\n\t\tSystem.out.println(\"arrayList.get(1) should be 20: \" + arrayList.get(1));\n\t\t\n\t\tSystem.out.println(\"arrayList.remove(1) should return 20: \" + arrayList.remove(1));\n\t\tSystem.out.println(\"arrayList.get(1) should be 15: \" + arrayList.get(1));\n\t\t\n\t\tSystem.out.println(\"to string should return [7, 15, 23]: \" + arrayList.toString());\n\t\tInteger[] otherArr = new Integer[] {7, 15, 23};\n\t\tList<Integer> otherList = Arrays.asList(otherArr);\n\t\tSystem.out.println(\"two arraylists with same elements should be equal: \" + otherList.equals(arrayList));\n\t}\n}\n", "user_id"=>578})
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"javac CSASubset.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac CSASubset.java"} (via streamed from java_runner_channel_578)
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31585 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"java CSASubset"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31585}} (via streamed from java_runner_channel_578)
+JavaRunnerChannel transmitting {"stdout"=>"java CSASubset"} (via streamed from java_runner_channel_578)
+[ActionCable] Broadcasting to java_runner_channel_578: {:stdout=>"String testing...\nsample: Hello World sample2: Hello World\nsample.equals(sample2) (expect true): true\nsample.compareTo(sample2) (expect 0): 0\nsample == sample2 (expect false): false\nresetting sample2\nsample: Hello World sample2: a new string\nsample.compareTo(sample2): (expect -25): -25\nsample length: (expect 11): 11\nsample2 length: (expect 12): 12\nsample.substring(0, 5): (expect Hello): Hello\nsample.substring(6): (expect World): World\nsample.indexOf(\"World\"): (expect 6): 6\n\nInteger testing...\ny should be 5:  5\nInteger min value (expect -2147483648): -2147483648\nInteger max value (expect (2147883647): 2147483647\n7 / 5 = (expect 1) 1\n7 % 5 = (expect 2) 2\nint value of 3 (expect 3): 3\n\nDouble testing...\nDouble x (expect 17.5): 17.5\nconvert to double (expect 17.5): 17.5\n\nMath testing...\nMath.abs(9) (expect 9): 9\nMath.abs(-123.5) (expect 123.5): 123.5\nMath.pow(3.5, 2) (expect 12.25): 12.25\nMath.sqrt(9): (expect 3): 3.0\nMath.sqrt(17): (expect 4.123...): 4.123105625617661\nMath.random() (expect double between 0.0 and 1.0): 0.4785848787911763\n\nNew array list should have size 0: 0\nAdd new element to list returns true: true\narray list should now have size 3: 3\narrayList.get(1) should be 15: 15\nAfter add at index, arrayList.get(1) should be 12: 12\narrayList.get(2) should be 15: 15\narrayList.set(1, 20) should return 12: 12\narrayList.get(1) should be 20: 20\narrayList.remove(1) should return 20: 20\narrayList.get(1) should be 15: 15\nto string should return [7, 15, 23]: [7, 15, 23]\ntwo arraylists with same elements should be equal: true\n", :stderr=>"", :status=>#<Process::Status: pid 31586 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"String testing...\nsample: Hello World sample2: Hello World\nsample.equals(sample2) (expect true): true\nsample.compareTo(sample2) (expect 0): 0\nsample == sample2 (expect false): false\nresetting sample2\nsample: Hello World sample2: a new string\nsample.compareTo(sample2): (expect -... (via streamed from java_runner_channel_578)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:13:22 -0800
+JavaRunnerChannel stopped streaming from java_runner_channel_578
+Started GET "/cable" for 127.0.0.1 at 2021-01-12 17:13:22 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-12 17:13:22 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (f4350a0d-517e-4541-9858-b157aab17011)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_877
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n", "user_id"=>877})
+[ActionCable] Broadcasting to java_runner_channel_877: {:stdout=>"javac HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac HelloWorld.java"} (via streamed from java_runner_channel_877)
+[ActionCable] Broadcasting to java_runner_channel_877: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31647 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_877: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31647}} (via streamed from java_runner_channel_877)
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_877)
+[ActionCable] Broadcasting to java_runner_channel_877: {:stdout=>"Hello World\n", :stderr=>"", :status=>#<Process::Status: pid 31648 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31648}} (via streamed from java_runner_channel_877)
+JavaRunnerChannel#run_program({"filename"=>"HelloWorld.java", "text"=>"public class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World!!?!!?\");\n\t}\n}\n", "user_id"=>877})
+[ActionCable] Broadcasting to java_runner_channel_877: {:stdout=>"javac HelloWorld.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac HelloWorld.java"} (via streamed from java_runner_channel_877)
+[ActionCable] Broadcasting to java_runner_channel_877: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 31651 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_877: {:stdout=>"java HelloWorld"}
+JavaRunnerChannel transmitting {"stdout"=>"java HelloWorld"} (via streamed from java_runner_channel_877)
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31651}} (via streamed from java_runner_channel_877)
+[ActionCable] Broadcasting to java_runner_channel_877: {:stdout=>"Hello World!!?!!?\n", :stderr=>"", :status=>#<Process::Status: pid 31652 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World!!?!!?\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>31652}} (via streamed from java_runner_channel_877)
+Started GET "/cable" for 127.0.0.1 at 2021-01-13 14:58:35 -0800
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-13 14:58:35 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (aefb6555-cd24-4fca-af4c-b347a7782465)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_463
+JavaRunnerChannel#run_program({"filename"=>"ConsoleSample.java", "text"=>"import java.util.Scanner;\n\npublic class ConsoleSample {\n\tpublic static void main(String[] args) {\n\t\tScanner console = new Scanner(System.in);\n\t\tSystem.out.println(\"Enter your name: \");\n\t\tString name = console.next();\n\t\tSystem.out.println(\"Hello \" + name);\n\t}\n}\n", "user_id"=>463})
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"javac ConsoleSample.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac ConsoleSample.java"} (via streamed from java_runner_channel_463)
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 36047 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>36047}} (via streamed from java_runner_channel_463)
+JavaRunnerChannel#run_program({"filename"=>"ConsoleSample.java", "text"=>"import java.util.Scanner;\n\npublic class ConsoleSample {\n\tpublic static void main(String[] args) {\n\t\tScanner console = new Scanner(System.in);\n\t\tSystem.out.println(\"Enter your name: \");\n\t\tString name = console.next();\n\t\tSystem.out.println(\"Hello \" + name);\n\t}\n}\n", "user_id"=>463})
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"javac ConsoleSample.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac ConsoleSample.java"} (via streamed from java_runner_channel_463)
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 36109 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>36109}} (via streamed from java_runner_channel_463)
+JavaRunnerChannel#run_program({"filename"=>"ConsoleSample.java", "text"=>"import java.util.Scanner;\n\npublic class ConsoleSample {\n\tpublic static void main(String[] args) {\n\t\tScanner console = new Scanner(System.in);\n\t\tSystem.out.println(\"Enter your name: \");\n\t\tString name = console.next();\n\t\tSystem.out.println(\"Hello \" + name);\n\t}\n}\n", "user_id"=>463})
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"javac ConsoleSample.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac ConsoleSample.java"} (via streamed from java_runner_channel_463)
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 36121 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>36121}} (via streamed from java_runner_channel_463)
+JavaRunnerChannel#run_program({"filename"=>"ConsoleSample.java", "text"=>"import java.util.Scanner;\n\npublic class ConsoleSample {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World!\");\n\t}\n}\n", "user_id"=>463})
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"javac ConsoleSample.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac ConsoleSample.java"} (via streamed from java_runner_channel_463)
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 36129 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>36129}} (via streamed from java_runner_channel_463)
+JavaRunnerChannel#run_program({"filename"=>"ConsoleSample.java", "text"=>"import java.util.Scanner;\n\npublic class ConsoleSample {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World!\");\n\t}\n}\n", "user_id"=>463})
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"javac ConsoleSample.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac ConsoleSample.java"} (via streamed from java_runner_channel_463)
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 36137 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>36137}} (via streamed from java_runner_channel_463)
+Started GET "/cable" for 127.0.0.1 at 2021-01-13 15:05:30 -0800
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-13 15:05:30 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (75efbff8-8dce-407f-8a1b-ea7bb9852463)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_463
+JavaRunnerChannel#run_program({"filename"=>"ConsoleSample.java", "text"=>"import java.util.Scanner;\n\npublic class ConsoleSample {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World!\");\n\t}\n}\n", "user_id"=>463})
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"javac ConsoleSample.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac ConsoleSample.java"} (via streamed from java_runner_channel_463)
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 36158 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"java ConsoleSample"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>36158}} (via streamed from java_runner_channel_463)
+JavaRunnerChannel transmitting {"stdout"=>"java ConsoleSample"} (via streamed from java_runner_channel_463)
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"Hello World!\n", :stderr=>"", :status=>#<Process::Status: pid 36159 exit 0>}
+JavaRunnerChannel transmitting {"stdout"=>"Hello World!\n", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>36159}} (via streamed from java_runner_channel_463)
+JavaRunnerChannel#run_program({"filename"=>"ConsoleSample.java", "text"=>"import java.util.Scanner;\n\npublic class ConsoleSample {\n\tpublic static void main(String[] args) {\n\t\tScanner console = new Scanner(System.in);\n\t\tSystem.out.println(\"Enter your name: \");\n\t\tString name = console.next();\n\t\tSystem.out.println(\"Hello \" + name);\n\t}\n}\n", "user_id"=>463})
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"javac ConsoleSample.java"}
+JavaRunnerChannel transmitting {"stdout"=>"javac ConsoleSample.java"} (via streamed from java_runner_channel_463)
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"", :stderr=>"", :status=>#<Process::Status: pid 36162 exit 0>}
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"java ConsoleSample"}
+JavaRunnerChannel transmitting {"stdout"=>"", "stderr"=>"", "status"=>{"exitstatus"=>0, "pid"=>36162}} (via streamed from java_runner_channel_463)
+JavaRunnerChannel transmitting {"stdout"=>"java ConsoleSample"} (via streamed from java_runner_channel_463)
+[ActionCable] Broadcasting to java_runner_channel_463: {:stdout=>"Enter your name: \n", :stderr=>"Exception in thread \"main\" java.util.NoSuchElementException\n\tat java.util.Scanner.throwFor(Scanner.java:862)\n\tat java.util.Scanner.next(Scanner.java:1371)\n\tat ConsoleSample.main(ConsoleSample.java:7)\n", :status=>#<Process::Status: pid 36163 exit 1>}
+JavaRunnerChannel transmitting {"stdout"=>"Enter your name: \n", "stderr"=>"Exception in thread \"main\" java.util.NoSuchElementException\n\tat java.util.Scanner.throwFor(Scanner.java:862)\n\tat java.util.Scanner.next(Scanner.java:1371)\n\tat ConsoleSample.main(ConsoleSample.java:7)\n", "status"=>{"exitstatus"=>1, "pid"=>36163}} (via streamed from java_runner_channel_463)
+Started GET "/cable" for 127.0.0.1 at 2021-01-13 15:26:14 -0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-01-13 15:26:14 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Registered connection (4bcc4030-fecf-49ca-9de2-6f36f6ca5155)
+JavaRunnerChannel is transmitting the subscription confirmation
+JavaRunnerChannel is streaming from java_runner_channel_463

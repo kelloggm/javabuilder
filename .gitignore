@@ -1,3 +1,5 @@
-/websocket-prototype/java-processor/node-modules
+/websocket-prototype/java-processor/node_modules
+/websocket-prototype/java-processor/public/packs/js
 /websocket-prototype/java-processor/tmp
-/websocket-prototype/java-processor-app/node-modules
+/websocket-prototype/java-processor-app/node_modules
+.DS_Store

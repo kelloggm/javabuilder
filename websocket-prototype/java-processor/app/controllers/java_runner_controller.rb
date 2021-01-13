@@ -1,0 +1,3 @@
+
+class JavaRunnerController < ApplicationController
+end
