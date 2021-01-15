@@ -3,3 +3,7 @@
 /websocket-prototype/java-processor/tmp
 /websocket-prototype/java-processor-app/node_modules
 .DS_Store
+/websocket-prototype/java-processor/config/master.key
+websocket-prototype/java-processor-app/.eslintcache
+websocket-prototype/.DS_Store
+websocket-prototype/java-processor/log/development.log

@@ -13,7 +13,8 @@ export default class JavaIde extends React.Component {
       programOutput: [],
       connection: null,
       program: null,
-      filename: null
+      filename: null,
+      userInput: null,
     };
   }
 
@@ -62,6 +63,10 @@ export default class JavaIde extends React.Component {
       run_program(filename, text) {
         console.log("calling run program");
         this.perform("run_program", {filename: filename, text: text, user_id: userId})
+      },
+
+      send_input(text) {
+        this.perform("send_input", {data: text, user_id: userId})
       }
     });
 
@@ -69,7 +74,6 @@ export default class JavaIde extends React.Component {
   }
 
   handleSubmit = (event) => {
-    console.log(event);
     event.preventDefault();
     if (!this.state.filename || !this.state.program || !this.state.connection) {
       console.log("something is wrong...");
@@ -87,6 +91,15 @@ export default class JavaIde extends React.Component {
     });
   }
 
+  handleUserInputSubmit = (event) => {
+    event.preventDefault();
+    if (!this.state.userInput || !this.state.connection) {
+      console.log("something is wrong...");
+      return;
+    }
+    this.state.connection.send_input(this.state.userInput)
+  }
+
   render() {
     return (
       <div>
@@ -99,7 +112,15 @@ export default class JavaIde extends React.Component {
           <label>Filename
             <input type="text" name="filename" onChange={this.handleInputChange}/>
           </label>
+          <br/>
           <input type="submit" value="Run My Program!"/>
+        </form>
+        <form onSubmit={this.handleUserInputSubmit}>
+          <label>Stdin
+            <textarea rows={3} cols={80} name="userInput" onChange={this.handleInputChange}/>
+          </label>
+          <br/>
+          <input type="submit" value="Add User Input"/>
         </form>
         <h2>Output</h2>
         <div>
@@ -107,6 +128,7 @@ export default class JavaIde extends React.Component {
             <p>{output}</p>
           ))}
         </div>
+        
       </div>
     );
   }

@@ -26,5 +26,27 @@ class JavaRunnerHelper
 
     end
   end
+
+
+
+  def self.test_java_runner
+    scanner_text = "import java.util.Scanner;
+public class ScannerSample {
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+		System.out.println(\"Enter your name: \");
+		String name = console.next();
+		System.out.println(\"Hello \" + name);
+	}
+}
+"
+    jr = JavaRunner.new(1)
+    thr = Thread.new{ jr.run_java_program("ScannerSample.java", scanner_text) }
+    sleep(3)
+    puts "finished sleep"
+    jr.addToStdin("Hello")
+    puts "added to stdin?"
+    thr.join
+  end
 end
 
