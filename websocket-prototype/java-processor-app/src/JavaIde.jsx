@@ -102,26 +102,32 @@ export default class JavaIde extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{marginLeft: 15}}>
         <h1>Basic Java IDE</h1>
         <form onSubmit={this.handleSubmit}>
           <label>Your program
+            <br/>
             <textarea rows={10} cols={80} name="program" onChange={this.handleInputChange}/>
           </label>
           <br/>
-          <label>Filename
+          <br/>
+          <label>Filename<br/>
             <input type="text" name="filename" onChange={this.handleInputChange}/>
           </label>
           <br/>
+          <br/>
           <input type="submit" value="Run My Program!"/>
         </form>
+        <br/>
         <form onSubmit={this.handleUserInputSubmit}>
-          <label>Stdin
+          <label>Stdin <br/>
             <textarea rows={3} cols={80} name="userInput" onChange={this.handleInputChange}/>
           </label>
           <br/>
+          <br/>
           <input type="submit" value="Add User Input"/>
         </form>
+        <br/>
         <h2>Output</h2>
         <div>
           {this.state.programOutput.map((output) => (
