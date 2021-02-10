@@ -1,0 +1,3 @@
+{
+  "Foo.java": "public class Foo {\n  public static void main(String[] args) {\n    System.out.println(\"Hello Molly!\");\n  }\n}\n"
+}
