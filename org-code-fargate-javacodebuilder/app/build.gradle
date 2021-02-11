@@ -9,6 +9,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id 'java'
 }
 
 repositories {
@@ -31,4 +32,29 @@ dependencies {
 application {
     // Define the main class for the application.
     mainClass = 'org.code.fargate.javacodebuilder.App'
+}
+
+// jar {
+//   manifest {
+//     attributes(
+//       'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+//       'Main-Class': 'org.code.fargate.javacodebuilder.App'
+//     )
+//   }
+// }
+
+task uberJar(type: Jar) {
+    archiveClassifier = 'uber'
+  manifest {
+    attributes(
+      'Main-Class': 'org.code.fargate.javacodebuilder.App'
+    )
+  }
+
+    from sourceSets.main.output
+
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
+    }
 }
