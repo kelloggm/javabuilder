@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 // made following instructions here: https://spring.io/guides/gs/messaging-stomp-websocket/
+// and here: https://www.mokkapps.de/blog/sending-message-to-specific-anonymous-user-on-spring-websocket/
 @SpringBootApplication
 public class CodeBuilderApplication {
     public static void main(String[] args) {

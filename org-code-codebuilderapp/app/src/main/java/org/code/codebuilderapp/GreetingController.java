@@ -6,20 +6,29 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Paths;
+import java.security.Principal;
 
 import org.apache.commons.io.FilenameUtils;
 
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.messaging.simp.annotation.SendToUser;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.util.HtmlUtils;
 
 @Controller
 public class GreetingController {
+  private final GreetingService greetingService;
+
+  GreetingController(GreetingService greetingService) {
+    this.greetingService = greetingService;
+  }
 
   @MessageMapping("/hello")
-  @SendTo("/topic/greetings")
-  public Greeting greeting(HelloMessage message) throws Exception {
+  // @SendTo("/topic/greetings")
+  @SendToUser("/topic/greetings")
+  public Greeting greeting(HelloMessage message, Principal principal) throws Exception {
 
 
     // TODO: CSA-48 Handle more than one file
@@ -82,6 +91,9 @@ public class GreetingController {
       return new Greeting("An error occurred reading the program output.");
     }
 
-    return new Greeting("> " + programOutput.toString());
+    // return new Greeting("> " + programOutput.toString());
+    greetingService.sendMessages(principal.getName(), programOutput.toString());
+    // Haha this line gets sent second.
+    return new Greeting("> Compiling and running your code...");
   }
 }
