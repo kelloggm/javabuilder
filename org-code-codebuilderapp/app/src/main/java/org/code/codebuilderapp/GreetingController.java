@@ -7,9 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Paths;
 import java.security.Principal;
-
 import org.apache.commons.io.FilenameUtils;
-
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
@@ -19,6 +17,7 @@ import org.springframework.web.util.HtmlUtils;
 
 @Controller
 public class GreetingController {
+
   private final GreetingService greetingService;
 
   GreetingController(GreetingService greetingService) {
@@ -28,9 +27,8 @@ public class GreetingController {
   @MessageMapping("/hello")
   // @SendTo("/topic/greetings")
   @SendToUser("/topic/greetings")
-  public Greeting greeting(HelloMessage message, Principal principal) throws Exception {
-
-
+  public Greeting greeting(HelloMessage message, Principal principal)
+    throws Exception {
     // TODO: CSA-48 Handle more than one file
     // if (userProject.size() > 1) {
     //   return "Error: Can only process one file at a time.";
@@ -62,7 +60,8 @@ public class GreetingController {
       return new Greeting("An error occurred creating files.");
     }
 
-    ProcessBuilder pb = new ProcessBuilder().command("bash", compileRunScript.toString());
+    ProcessBuilder pb = new ProcessBuilder()
+    .command("bash", compileRunScript.toString());
 
     Process process = null;
     try {
@@ -81,7 +80,9 @@ public class GreetingController {
     StringBuilder programOutput = new StringBuilder();
     try {
       // Get output from the user's program
-      BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+      BufferedReader reader = new BufferedReader(
+        new InputStreamReader(process.getInputStream())
+      );
       String line = null;
       while ((line = reader.readLine()) != null) {
         programOutput.append(line);
