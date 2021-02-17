@@ -4,15 +4,13 @@ import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingService {
+public class CompileRunService {
 
   private final SimpMessagingTemplate simpMessagingTemplate;
   private static final String WS_MESSAGE_TRANSFER_DESTINATION =
-    "/topic/greetings";
+    "/topic/output";
 
-  // private List<String> userNames = new ArrayList<>();
-
-  GreetingService(SimpMessagingTemplate simpMessagingTemplate) {
+  CompileRunService(SimpMessagingTemplate simpMessagingTemplate) {
     this.simpMessagingTemplate = simpMessagingTemplate;
   }
 
@@ -20,10 +18,7 @@ public class GreetingService {
     simpMessagingTemplate.convertAndSendToUser(
       userName,
       WS_MESSAGE_TRANSFER_DESTINATION,
-      new Greeting(message)
+      new UserProgramOutput(message)
     );
   }
-  //   public void addUserName(String username) {
-  //     userNames.add(username);
-  // }
 }

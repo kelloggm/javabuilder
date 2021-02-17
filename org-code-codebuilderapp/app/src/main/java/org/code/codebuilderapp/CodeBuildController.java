@@ -9,25 +9,21 @@ import java.nio.file.Paths;
 import java.security.Principal;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
-import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.messaging.simp.annotation.SendToUser;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.util.HtmlUtils;
 
 @Controller
-public class GreetingController {
+public class CodeBuildController {
 
-  private final GreetingService greetingService;
+  private final CompileRunService compileRunService;
 
-  GreetingController(GreetingService greetingService) {
-    this.greetingService = greetingService;
+  CodeBuildController(CompileRunService compileRunService) {
+    this.compileRunService = compileRunService;
   }
 
-  @MessageMapping("/hello")
-  // @SendTo("/topic/greetings")
-  @SendToUser("/topic/greetings")
-  public Greeting greeting(HelloMessage message, Principal principal)
+  @MessageMapping("/execute")
+  @SendToUser("/topic/output")
+  public UserProgramOutput greeting(UserProgram userProgram, Principal principal)
     throws Exception {
     // TODO: CSA-48 Handle more than one file
     // if (userProject.size() > 1) {
@@ -37,9 +33,9 @@ public class GreetingController {
     File compileRunScript = null;
     String tempDir = System.getProperty("java.io.tmpdir");
 
-    String filename = message.getName();
+    String filename = userProgram.getFileName();
     String className = FilenameUtils.removeExtension(filename);
-    String userCode = message.getCode();
+    String userCode = userProgram.getCode();
     try {
       // Build user's java file
       File userFile = new File(Paths.get(tempDir, filename).toString());
@@ -57,7 +53,7 @@ public class GreetingController {
     } catch (IOException e) {
       e.printStackTrace();
       // TODO: CSA-42 Improve error handling
-      return new Greeting("An error occurred creating files.");
+      return new UserProgramOutput("An error occurred creating files.");
     }
 
     ProcessBuilder pb = new ProcessBuilder()
@@ -71,10 +67,10 @@ public class GreetingController {
       process.waitFor();
     } catch (InterruptedException e) {
       e.printStackTrace();
-      return new Greeting("An error occurred running the program.");
+      return new UserProgramOutput("An error occurred running the program.");
     } catch (IOException e) {
       e.printStackTrace();
-      return new Greeting("An error occurred running the program.");
+      return new UserProgramOutput("An error occurred running the program.");
     }
 
     StringBuilder programOutput = new StringBuilder();
@@ -89,12 +85,12 @@ public class GreetingController {
       }
     } catch (IOException e) {
       e.printStackTrace();
-      return new Greeting("An error occurred reading the program output.");
+      return new UserProgramOutput("An error occurred reading the program output.");
     }
 
     // return new Greeting("> " + programOutput.toString());
-    greetingService.sendMessages(principal.getName(), programOutput.toString());
+    compileRunService.sendMessages(principal.getName(), programOutput.toString());
     // Haha this line gets sent second.
-    return new Greeting("> Compiling and running your code...");
+    return new UserProgramOutput("> Compiling and running your code...");
   }
 }

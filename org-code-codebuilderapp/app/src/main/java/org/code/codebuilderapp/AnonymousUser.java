@@ -2,11 +2,14 @@ package org.code.codebuilderapp;
 
 import java.security.Principal;
 
-public class StompPrincipal implements Principal {
+/**
+ * A principal associated with a single anonymous session.
+ */
+public class AnonymousUser implements Principal {
 
   String name;
 
-  StompPrincipal(String name) {
+  AnonymousUser(String name) {
     this.name = name;
   }
 
