@@ -15,13 +15,17 @@ public class JavaBuilder {
   private final JavaRunner javaRunner;
   private final OutputSemaphore outputSemaphore;
 
-  public JavaBuilder(String connectionId, String apiEndpoint, String queueUrl) {
+  public JavaBuilder(String connectionId, String apiEndpoint, String queueUrl, String fileName, String fileUrl) {
+    this.outputSemaphore = new OutputSemaphore();
+
+    // Create code runner
+    this.javaRunner = new JavaRunner(this.outputSemaphore);
+
     // Create output handler
     AmazonApiGatewayManagementApi api = AmazonApiGatewayManagementApiClientBuilder.standard().withEndpointConfiguration(
         new AwsClientBuilder.EndpointConfiguration(apiEndpoint, "us-east-1")
     ).build();
     this.outputHandler = new OutputHandler(connectionId, api);
-    this.outputSemaphore = new OutputSemaphore();
 
     // Overwrite system I/O
     RuntimeIO runtimeIO;
@@ -31,9 +35,6 @@ public class JavaBuilder {
       this.outputHandler.sendMessage("There was an error running your code. Try again.");
       throw new RuntimeException("Error setting up console IO", e);
     }
-
-    // Create code runner
-    this.javaRunner = new JavaRunner(this.outputSemaphore);
 
     // Create input poller
     AmazonSQS sqsClient = AmazonSQSClientBuilder.defaultClient();

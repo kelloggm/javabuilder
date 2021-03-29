@@ -12,7 +12,9 @@ public class LambdaRequestHandler implements RequestHandler<Map<String,String>, 
     final String connectionId = lambdaInput.get("connectionId");
     final String apiEndpoint = lambdaInput.get("apiEndpoint");
     final String queueUrl = lambdaInput.get("queueUrl");
-    JavaBuilder javaBuilder = new JavaBuilder(connectionId, apiEndpoint, queueUrl);
+    final String fileName = lambdaInput.get("fileName");
+    final String fileUrl = lambdaInput.get("fileUrl");
+    JavaBuilder javaBuilder = new JavaBuilder(connectionId, apiEndpoint, queueUrl, fileName, fileUrl);
     javaBuilder.runUserCode();
 
     return "done";
