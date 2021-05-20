@@ -1,33 +1,33 @@
-package org.code.javabuilder;
+package org.code.protocol;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.HashMap;
 
 /**
- * An exception caused by us that is intended to be seen by the user. These are the conceptual
+ * A checked exception caused by us that is intended to be seen by the user. These are the conceptual
  * equivalent of HTTP 500 errors.
  */
 public class UserFacingException extends Exception {
-  private final UserFacingExceptionKey key;
+  private final UserFacingThrowableKey key;
 
-  public UserFacingException(UserFacingExceptionKey key) {
+  public UserFacingException(UserFacingThrowableKey key) {
     super(key.toString());
     this.key = key;
   }
 
-  public UserFacingException(UserFacingExceptionKey key, Exception cause) {
+  public UserFacingException(UserFacingThrowableKey key, Exception cause) {
     super(key.toString(), cause);
     this.key = key;
   }
 
-  public UserFacingExceptionMessage getExceptionMessage() {
+  public UserFacingThrowableMessage getExceptionMessage() {
     HashMap<String, String> detail = new HashMap<>();
     detail.put("connectionId", Properties.getConnectionId());
     if (this.getCause() != null) {
       detail.put("cause", this.getLoggingString());
     }
-    return new UserFacingExceptionMessage(this.key, detail);
+    return new UserFacingThrowableMessage(this.key, detail);
   }
 
   /** @return A pretty version of the exception and stack trace. */

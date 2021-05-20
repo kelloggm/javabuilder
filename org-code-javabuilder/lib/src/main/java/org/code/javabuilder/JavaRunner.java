@@ -6,6 +6,8 @@ import java.lang.reflect.Method;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.List;
+import org.code.protocol.UserFacingException;
+import org.code.protocol.UserFacingThrowableKey;
 
 /** The class that executes the student's code */
 public class JavaRunner {
@@ -81,7 +83,7 @@ public class JavaRunner {
         }
       } catch (ClassNotFoundException e) {
         // this should be caught earlier in compilation
-        throw new UserFacingException(UserFacingExceptionKey.INTERNAL_RUNTIME_EXCEPTION, e);
+        throw new UserFacingException(UserFacingThrowableKey.INTERNAL_RUNTIME_EXCEPTION, e);
       }
     }
 

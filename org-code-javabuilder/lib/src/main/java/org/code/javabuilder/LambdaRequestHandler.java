@@ -8,6 +8,9 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import java.util.Map;
+import org.code.protocol.GlobalProtocol;
+import org.code.protocol.Properties;
+import org.code.protocol.UserFacingException;
 
 /**
  * This is the entry point for the lambda function. This should be thought of as similar to a main
@@ -53,9 +56,10 @@ public class LambdaRequestHandler implements RequestHandler<Map<String, String>,
 
     // Load files to memory and create and invoke the code execution environment
     try {
+      GlobalProtocol.create(outputAdapter, inputAdapter);
       UserProjectFiles userProjectFiles = userProjectFileLoader.loadFiles();
       try (CodeBuilder codeBuilder =
-          new CodeBuilder(inputAdapter, outputAdapter, userProjectFiles)) {
+          new CodeBuilder(GlobalProtocol.getInstance(), userProjectFiles)) {
         codeBuilder.buildUserCode();
         codeBuilder.runUserCode();
       }

@@ -6,6 +6,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
+import org.code.protocol.UserFacingException;
+import org.code.protocol.UserFacingThrowableKey;
 
 /** Manages the in-memory list of user project files. */
 public class UserProjectFileLoader implements ProjectFileLoader {
@@ -37,11 +39,11 @@ public class UserProjectFileLoader implements ProjectFileLoader {
     try {
       response = client.send(request, HttpResponse.BodyHandlers.ofString());
     } catch (IOException | InterruptedException e) {
-      throw new UserFacingException(UserFacingExceptionKey.INTERNAL_EXCEPTION, e);
+      throw new UserFacingException(UserFacingThrowableKey.INTERNAL_EXCEPTION, e);
     }
     String body = response.body();
     if (response.statusCode() > 299) {
-      throw new UserFacingException(UserFacingExceptionKey.INTERNAL_EXCEPTION, new Exception(body));
+      throw new UserFacingException(UserFacingThrowableKey.INTERNAL_EXCEPTION, new Exception(body));
     }
     return this.projectFileParser.parseFileJson(body);
   }

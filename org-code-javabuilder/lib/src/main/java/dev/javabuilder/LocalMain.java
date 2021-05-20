@@ -1,6 +1,8 @@
 package dev.javabuilder;
 
 import org.code.javabuilder.*;
+import org.code.protocol.GlobalProtocol;
+import org.code.protocol.UserFacingException;
 
 /**
  * Intended for local testing only. This is a local version of the Javabuilder lambda function. The
@@ -14,9 +16,10 @@ public class LocalMain {
     final LocalProjectFileLoader fileLoader = new LocalProjectFileLoader();
     // Create and invoke the code execution environment
     try {
+      GlobalProtocol.create(outputAdapter, inputAdapter);
       UserProjectFiles userProjectFiles = fileLoader.loadFiles();
       try (CodeBuilder codeBuilder =
-          new CodeBuilder(inputAdapter, outputAdapter, userProjectFiles)) {
+          new CodeBuilder(GlobalProtocol.getInstance(), userProjectFiles)) {
         codeBuilder.buildUserCode();
         codeBuilder.runUserCode();
       }

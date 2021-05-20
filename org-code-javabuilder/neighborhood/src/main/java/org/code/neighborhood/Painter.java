@@ -1,5 +1,7 @@
 package org.code.neighborhood;
 
+import org.code.protocol.OutputAdapter;
+
 import java.util.HashMap;
 
 public class Painter {
@@ -8,8 +10,9 @@ public class Painter {
   private int yLocation;
   private Direction direction;
   private int remainingPaint;
-  private Grid grid;
-  private String id;
+  private final Grid grid;
+  private final String id;
+  private final OutputAdapter outputAdapter;
 
   /** Creates a Painter object at (0, 0), facing East, with no paint. */
   public Painter() {
@@ -17,8 +20,10 @@ public class Painter {
     this.yLocation = 0;
     this.direction = Direction.EAST;
     this.remainingPaint = 0;
-    this.grid = World.getInstance().getGrid();
+    World worldInstance = World.getInstance();
+    this.grid = worldInstance.getGrid();
     this.id = "painter-" + lastId++;
+    this.outputAdapter = worldInstance.getOutputAdapter();
   }
 
   /**
@@ -34,7 +39,9 @@ public class Painter {
     this.yLocation = y;
     this.direction = Direction.fromString(direction);
     this.remainingPaint = paint;
-    this.grid = World.getInstance().getGrid();
+    World worldInstance = World.getInstance();
+    this.grid = worldInstance.getGrid();
+    this.outputAdapter = worldInstance.getOutputAdapter();
     int gridSize = this.grid.getSize();
     if (x < 0 || y < 0 || x >= gridSize || y >= gridSize) {
       throw new UnsupportedOperationException(ExceptionKeys.INVALID_LOCATION.toString());
@@ -65,7 +72,7 @@ public class Painter {
     HashMap<String, String> details = new HashMap<>();
     details.put("id", this.id);
     details.put("direction", this.direction.getDirectionString());
-    NeighborhoodOutputHandler.sendMessage(new NeighborhoodSignalMessage(NeighborhoodSignalKey.MOVE, details));
+    this.outputAdapter.sendMessage(new NeighborhoodSignalMessage(NeighborhoodSignalKey.MOVE, details));
   }
 
   /**
