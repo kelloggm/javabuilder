@@ -10,6 +10,7 @@ import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import java.util.Map;
 import org.code.protocol.GlobalProtocol;
 import org.code.protocol.Properties;
+import org.code.protocol.UserFacingError;
 import org.code.protocol.UserFacingException;
 
 /**
@@ -63,18 +64,14 @@ public class LambdaRequestHandler implements RequestHandler<Map<String, String>,
         codeBuilder.buildUserCode();
         codeBuilder.runUserCode();
       }
-    } catch (UserFacingException e) {
-      // Send user-facing exceptions to the user and log the stack trace to CloudWatch
-      outputAdapter.sendMessage(e.getExceptionMessage());
-      context.getLogger().log(e.getLoggingString());
-    } catch (UserInitiatedException e) {
+    } catch (UserFacingException | UserFacingError e) {
       // Send user-facing exceptions to the user and log the stack trace to CloudWatch
       outputAdapter.sendMessage(e.getExceptionMessage());
       context.getLogger().log(e.getLoggingString());
     } catch (InternalFacingException e) {
       // Send internal-facing exceptions to CloudWatch
       context.getLogger().log(e.getLoggingString());
-    } catch (Exception e) {
+    } catch (Throwable e) {
       e.printStackTrace();
     }
 

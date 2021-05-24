@@ -8,15 +8,15 @@ import java.util.HashMap;
  * A checked exception caused by us that is intended to be seen by the user. These are the conceptual
  * equivalent of HTTP 500 errors.
  */
-public class UserFacingException extends Exception {
-  private final UserFacingThrowableKey key;
+public abstract class UserFacingException extends Exception implements UserFacingThrowableProtocol {
+  private final Enum key;
 
-  public UserFacingException(UserFacingThrowableKey key) {
+  protected UserFacingException(Enum key) {
     super(key.toString());
     this.key = key;
   }
 
-  public UserFacingException(UserFacingThrowableKey key, Exception cause) {
+  protected UserFacingException(Enum key, Exception cause) {
     super(key.toString(), cause);
     this.key = key;
   }

@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import java.util.Comparator;
 import java.util.List;
 import org.code.protocol.*;
+import org.code.protocol.InternalJavabuilderError;
 
 /** The orchestrator for code compilation and execution. */
 public class CodeBuilder implements AutoCloseable {
@@ -27,17 +28,17 @@ public class CodeBuilder implements AutoCloseable {
     try {
       this.tempFolder = Files.createTempDirectory("tmpdir").toFile();
     } catch (IOException e) {
-      throw new UserFacingException(UserFacingThrowableKey.INTERNAL_EXCEPTION, e);
+      throw new InternalJavabuilderError(InternalErrorKey.INTERNAL_ERROR, e);
     }
   }
 
   /**
    * Saves non-source code assets to storage and compiles the user's code.
    *
-   * @throws UserFacingException if the user's code contains a compiler error or if we are unable to
-   *     compile due to internal errors.
+   * @throws InternalJavabuilderError if the user's code contains a compiler error or if we are
+   *     unable to compile due to internal errors.
    */
-  public void buildUserCode() throws UserFacingException, UserInitiatedException {
+  public void buildUserCode() throws UserFacingException, InternalJavabuilderError {
     this.saveProjectAssets();
     UserCodeCompiler codeCompiler =
         new UserCodeCompiler(
@@ -49,7 +50,7 @@ public class CodeBuilder implements AutoCloseable {
    * Replaces System.in and System.out with our custom implementation and executes the user's code.
    */
   public void runUserCode()
-      throws UserFacingException, InternalFacingException, UserInitiatedException {
+      throws UserFacingException, InternalFacingException, InternalJavabuilderError {
     System.setOut(new OutputPrintStream(this.outputAdapter));
     System.setIn(new InputRedirectionStream(this.inputAdapter));
     JavaRunner runner;
@@ -57,7 +58,7 @@ public class CodeBuilder implements AutoCloseable {
       runner =
           new JavaRunner(this.tempFolder.toURI().toURL(), this.userProjectFiles.getJavaFiles());
     } catch (MalformedURLException e) {
-      throw new UserFacingException(UserFacingThrowableKey.INTERNAL_RUNTIME_EXCEPTION, e);
+      throw new InternalJavabuilderError(InternalErrorKey.INTERNAL_RUNTIME_ERROR, e);
     }
     runner.runCode();
   }
@@ -86,7 +87,7 @@ public class CodeBuilder implements AutoCloseable {
   }
 
   /** Save any non-source code files to storage */
-  private void saveProjectAssets() throws UserFacingException {
+  private void saveProjectAssets() throws InternalJavabuilderError {
     // Save all text files to current folder.
     List<TextProjectFile> textProjectFiles = this.userProjectFiles.getTextFiles();
     for (TextProjectFile projectFile : textProjectFiles) {
@@ -94,7 +95,7 @@ public class CodeBuilder implements AutoCloseable {
       try {
         Files.writeString(Path.of(filePath), projectFile.getFileContents());
       } catch (IOException e) {
-        throw new UserFacingException(UserFacingThrowableKey.INTERNAL_COMPILER_EXCEPTION, e);
+        throw new InternalJavabuilderError(InternalErrorKey.INTERNAL_COMPILER_ERROR, e);
       }
     }
   }

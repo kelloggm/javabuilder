@@ -10,9 +10,10 @@ import java.util.List;
 import java.util.Objects;
 import javax.tools.*;
 import javax.tools.JavaCompiler.CompilationTask;
+import org.code.protocol.InternalErrorKey;
+import org.code.protocol.InternalJavabuilderError;
 import org.code.protocol.OutputAdapter;
 import org.code.protocol.UserFacingException;
-import org.code.protocol.UserFacingThrowableKey;
 
 /**
  * Compiles all user code managed by the ProjectFileManager. Any compiler output will be passed
@@ -62,7 +63,7 @@ public class UserCodeCompiler {
     } catch (IOException e) {
       e.printStackTrace();
       // if we can't set the file location we won't be able to run the class properly.
-      throw new UserFacingException(UserFacingThrowableKey.INTERNAL_COMPILER_EXCEPTION, e);
+      throw new InternalJavabuilderError(InternalErrorKey.INTERNAL_COMPILER_ERROR, e);
     }
     // create file for user-provided code
     List<JavaFileObject> files = new ArrayList<>();
@@ -78,7 +79,7 @@ public class UserCodeCompiler {
       optionList.add(
           Paths.get(Objects.requireNonNull(Util.getNeighborhoodJar()).toURI()).toString());
     } catch (URISyntaxException e) {
-      throw new UserFacingException(UserFacingThrowableKey.INTERNAL_COMPILER_EXCEPTION, e);
+      throw new InternalJavabuilderError(InternalErrorKey.INTERNAL_COMPILER_ERROR, e);
     }
 
     // create compilation task

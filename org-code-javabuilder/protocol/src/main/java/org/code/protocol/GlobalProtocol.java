@@ -10,9 +10,9 @@ public class GlobalProtocol {
     this.inputAdapter = inputAdapter;
   }
 
-  public static void create(OutputAdapter outputAdapter, InputAdapter inputAdapter) throws UserFacingException {
+  public static void create(OutputAdapter outputAdapter, InputAdapter inputAdapter) throws InternalJavabuilderError {
     if (GlobalProtocol.protocolInstance != null) {
-      throw new UserFacingException(UserFacingThrowableKey.INTERNAL_EXCEPTION);
+      throw new InternalJavabuilderError(InternalErrorKey.INTERNAL_ERROR);
     }
 
     GlobalProtocol.protocolInstance = new GlobalProtocol(outputAdapter, inputAdapter);

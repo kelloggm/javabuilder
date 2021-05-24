@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.List;
-import org.code.protocol.UserFacingException;
+import org.code.protocol.InternalJavabuilderError;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +17,7 @@ public class UserProjectFileParserTest {
   }
 
   @Test
-  public void canParseValidFileJson() throws UserFacingException, UserInitiatedException {
+  public void canParseValidFileJson() throws UserInitiatedException {
     String validJson =
         "{\"source\":{\"HelloWorld.java\":{\"text\":\"my code\",\"visible\":true}},\"animations\":{}}";
     String expectedCode = "my code";
@@ -30,16 +30,17 @@ public class UserProjectFileParserTest {
   }
 
   @Test
-  public void throwsExceptionOnInvalidJson() throws UserFacingException, UserInitiatedException {
+  public void throwsExceptionOnInvalidJson() {
     String invalidJson =
         "{\"source\":{\"HelloWorld.java\":{\"text\":\"public class HelloWorld {\\n";
 
     assertThrows(
-        UserFacingException.class, () -> this.userProjectFileParser.parseFileJson(invalidJson));
+        InternalJavabuilderError.class,
+        () -> this.userProjectFileParser.parseFileJson(invalidJson));
   }
 
   @Test
-  public void canParseMultipleFiles() throws UserFacingException, UserInitiatedException {
+  public void canParseMultipleFiles() throws UserInitiatedException {
     String validJson =
         "{\"source\":{\"HelloWorld.java\":{\"text\":\"my code\",\"visible\":true},"
             + "\"HelloWorld2.java\":{\"text\":\"my code\",\"visible\":true},"

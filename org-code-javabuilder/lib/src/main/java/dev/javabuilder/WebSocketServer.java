@@ -11,6 +11,7 @@ import javax.websocket.server.ServerEndpoint;
 import org.code.javabuilder.*;
 import org.code.protocol.GlobalProtocol;
 import org.code.protocol.Properties;
+import org.code.protocol.UserFacingError;
 import org.code.protocol.UserFacingException;
 
 /**
@@ -52,15 +53,12 @@ public class WebSocketServer {
                   codeBuilder.buildUserCode();
                   codeBuilder.runUserCode();
                 }
-              } catch (UserFacingException e) {
-                outputAdapter.sendMessage(e.getExceptionMessage());
-                outputAdapter.sendMessage(new DebuggingMessage("\n" + e.getLoggingString()));
-              } catch (UserInitiatedException e) {
+              } catch (UserFacingException | UserFacingError e) {
                 outputAdapter.sendMessage(e.getExceptionMessage());
                 outputAdapter.sendMessage(new DebuggingMessage("\n" + e.getLoggingString()));
               } catch (InternalFacingException e) {
                 outputAdapter.sendMessage(new DebuggingMessage("\n" + e.getLoggingString()));
-              } catch (Exception e) {
+              } catch (Throwable e) {
                 outputAdapter.sendMessage(new DebuggingMessage("\n" + e.getMessage()));
               } finally {
                 try {

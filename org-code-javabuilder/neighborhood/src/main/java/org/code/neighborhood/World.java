@@ -21,7 +21,7 @@ public class World {
     try {
       this.grid = gridFactory.createGridFromString(s);
     } catch (IOException e) {
-      throw new UserFacingError(UserFacingThrowableKey.INTERNAL_EXCEPTION, e);
+      throw new GridCreationError(InternalErrorKey.INTERNAL_ERROR, e);
     }
   }
 
@@ -31,7 +31,7 @@ public class World {
     try {
       this.grid = gridFactory.createGridFromJSON("grid.txt");
     } catch (IOException e) {
-      throw new UserFacingError(UserFacingThrowableKey.INTERNAL_EXCEPTION, e);
+      throw new GridCreationError(InternalErrorKey.INTERNAL_ERROR, e);
     }
   }
 

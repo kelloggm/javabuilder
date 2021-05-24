@@ -4,15 +4,15 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.HashMap;
 
-public class UserFacingError extends Error {
-  private final UserFacingThrowableKey key;
+public abstract class UserFacingError extends Error implements UserFacingThrowableProtocol {
+  private final Enum key;
 
-  public UserFacingError(UserFacingThrowableKey key) {
+  protected UserFacingError(Enum key) {
     super(key.toString());
     this.key = key;
   }
 
-  public UserFacingError(UserFacingThrowableKey key, Throwable cause) {
+  protected UserFacingError(Enum key, Throwable cause) {
     super(key.toString(), cause);
     this.key = key;
   }

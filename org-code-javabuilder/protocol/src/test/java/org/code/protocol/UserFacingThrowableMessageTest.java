@@ -12,7 +12,7 @@ public class UserFacingThrowableMessageTest {
     HashMap<String, String> details = new HashMap<>();
     details.put("foo", "bar");
     ClientMessage message =
-        new UserFacingThrowableMessage(UserFacingThrowableKey.INTERNAL_EXCEPTION, details);
+        new UserFacingThrowableMessage(InternalErrorKey.INTERNAL_ERROR, details);
     assertEquals(
         message.getFormattedMessage(),
         "{\"detail\":{\"foo\":\"bar\"},\"type\":\"EXCEPTION\",\"value\":\"INTERNAL_EXCEPTION\"}");
@@ -21,7 +21,7 @@ public class UserFacingThrowableMessageTest {
   @Test
   public void getFormattedSkipsDetailsIfMissing() {
     ClientMessage message =
-        new UserFacingThrowableMessage(UserFacingThrowableKey.INTERNAL_EXCEPTION, null);
+        new UserFacingThrowableMessage(InternalErrorKey.INTERNAL_ERROR, null);
     assertEquals(
         message.getFormattedMessage(), "{\"type\":\"EXCEPTION\",\"value\":\"INTERNAL_EXCEPTION\"}");
   }
