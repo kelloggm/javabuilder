@@ -7,6 +7,6 @@ import org.code.protocol.ClientMessageType;
 /** An error message directed to the user, caused by the user. */
 public class UserInitiatedExceptionMessage extends ClientMessage {
   UserInitiatedExceptionMessage(UserInitiatedExceptionKey key, HashMap<String, String> detail) {
-    super(ClientMessageType.EXCEPTION, key.toString(), detail);
+    super(ClientMessageType.EXCEPTION, key, detail);
   }
 }

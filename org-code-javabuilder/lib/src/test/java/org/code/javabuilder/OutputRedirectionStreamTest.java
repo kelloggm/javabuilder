@@ -31,7 +31,7 @@ public class OutputRedirectionStreamTest {
     stream.flush();
     ArgumentCaptor<SystemOutMessage> message = ArgumentCaptor.forClass(SystemOutMessage.class);
     verify(outputAdapter, times(1)).sendMessage(message.capture());
-    assertEquals(message.getValue().getValue(), "a");
+    assertEquals(message.getValue().getDetail().toString(), "{\"message\":\"a\"}");
   }
 
   @Test
@@ -43,7 +43,7 @@ public class OutputRedirectionStreamTest {
     stream.flush();
     ArgumentCaptor<SystemOutMessage> message = ArgumentCaptor.forClass(SystemOutMessage.class);
     verify(outputAdapter, times(1)).sendMessage(message.capture());
-    assertEquals(message.getValue().getValue(), "abc");
+    assertEquals(message.getValue().getDetail().toString(), "{\"message\":\"abc\"}");
   }
 
   @Test
@@ -53,6 +53,6 @@ public class OutputRedirectionStreamTest {
     stream.flush();
     ArgumentCaptor<SystemOutMessage> message = ArgumentCaptor.forClass(SystemOutMessage.class);
     verify(outputAdapter, times(1)).sendMessage(message.capture());
-    assertEquals(message.getValue().getValue(), "ello");
+    assertEquals(message.getValue().getDetail().toString(), "{\"message\":\"ello\"}");
   }
 }

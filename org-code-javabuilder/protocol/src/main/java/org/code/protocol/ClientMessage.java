@@ -24,22 +24,22 @@ import org.json.JSONObject;
  */
 public abstract class ClientMessage {
   private final ClientMessageType type;
-  private final String value;
+  private final Enum value;
   private final JSONObject detail;
 
-  protected ClientMessage(ClientMessageType type, String value, HashMap<String, String> detail) {
+  protected ClientMessage(ClientMessageType type, Enum value, HashMap<String, String> detail) {
     this.type = type;
     this.value = value;
     this.detail = new JSONObject(detail);
   }
 
-  protected ClientMessage(ClientMessageType type, String value) {
+  protected ClientMessage(ClientMessageType type, Enum value) {
     this.type = type;
     this.value = value;
     this.detail = new JSONObject();
   }
 
-  protected ClientMessage(ClientMessageType type, String value, JSONObject detail) {
+  protected ClientMessage(ClientMessageType type, Enum value, JSONObject detail) {
     this.type = type;
     this.value = value;
     this.detail = detail;
@@ -50,7 +50,7 @@ public abstract class ClientMessage {
   }
 
   public String getValue() {
-    return value;
+    return value.toString();
   }
 
   public JSONObject getDetail() {

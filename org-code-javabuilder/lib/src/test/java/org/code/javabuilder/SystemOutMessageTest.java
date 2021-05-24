@@ -10,6 +10,7 @@ public class SystemOutMessageTest {
   public void getFormattedMessageUsesNoDetails() {
     ClientMessage message = new SystemOutMessage("Hello world");
     assertEquals(
-        message.getFormattedMessage(), "{\"type\":\"SYSTEM_OUT\",\"value\":\"Hello world\"}");
+        message.getFormattedMessage(),
+        "{\"detail\":{\"message\":\"Hello world\"},\"type\":\"SYSTEM_OUT\",\"value\":\"MESSAGE\"}");
   }
 }

@@ -7,6 +7,6 @@ import java.util.HashMap;
 
 public class NeighborhoodSignalMessage extends ClientMessage {
   NeighborhoodSignalMessage(NeighborhoodSignalKey key, HashMap<String, String> detail) {
-    super(ClientMessageType.NEIGHBORHOOD, key.toString(), detail);
+    super(ClientMessageType.NEIGHBORHOOD, key, detail);
   }
 }
