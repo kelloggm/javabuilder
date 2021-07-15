@@ -229,6 +229,12 @@ Resources:
             82lnuUHekrW+j3sCimbhFPM+HDXJI03g5Uv698oiSXp8+dqB7VzGD4ux9lwlB6Dr\n 3+8Pz/c7t8me0CJquotr7p7kYtoPo6kK9NL74zu4KsAcotDvRw8tHRs3cZ/X3KEl\n
             vb2YtSsq4ecf7sZeQgSbeZ6PdwEIBp0dl5AG6SgIWPcweNwmZmJg917i0lSGgWxW\n OlIo9VurlVd3AgMBAAE=\n
             -----END RSA PUBLIC KEY-----'
+          rsa_pub_adhoc: '-----BEGIN RSA PUBLIC KEY-----\n MIIBigKCAYEAsAThWFxY9BsbUNQDhpMu+KrhClJTmNLxvcDhQEH0Q9XnixcWJ+/c\n
+            3LP2FEhigh4s8Q1JK7QufZy6MbOYb4tt1zyuoy+3/gBd0H4g2CJv/M1kU4+hxmsf\n VDa0JfYftwEm0mh2gPG1tqh+kGLHavy7ucZQ1pKZt2u8VJkAvccZai+GkPia8hEk\n
+            UKL+N1/czTcl6Hk5jZ49iRBkwqkDcA4mkVEjNSvQuv+XnK/82+501+HH3gW3+u8X\n dqp6ByG33qSgkc6Q7IuzPo3huNUmg/I9pv2UmnUwMuYwg0OLIA+n2vnptfHZiysK\n
+            pH7am13oDai/Ym5OXvkgYLvxpKdm4dspsHFEhqcLpAi6/a9r3/j8eOe1OovRYS9F\n D93FWO/R/WVPf4y6ivWABv8m9kdIkON7jX8mFtxU1QmLrKEMQrJ7kLHaWTyO4Aa3\n
+            +pVMuC5D6l9s30vvv42aYRUaevCoxYJWckkrawulrKCLLAS/jr+HWvtRebOMDfVa\n Q6kmTDXoCz5RAgMBAAE=\n
+            -----END RSA PUBLIC KEY-----'
   WebSocketAuthorizerPermission:
     Type: AWS::Lambda::Permission
     DependsOn:
