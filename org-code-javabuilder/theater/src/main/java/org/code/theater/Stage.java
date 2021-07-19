@@ -369,8 +369,8 @@ public class Stage {
       this.writeImageAndAudioToFile();
 
       // TODO: Remove these messages once we've updated the client to load from file.
-      this.outputAdapter.sendMessage(ImageEncoder.encodeStreamToMessage(this.imageOutputStream));
-      this.outputAdapter.sendMessage(SoundEncoder.encodeStreamToMessage(this.audioOutputStream));
+      // this.outputAdapter.sendMessage(ImageEncoder.encodeStreamToMessage(this.imageOutputStream));
+      // this.outputAdapter.sendMessage(SoundEncoder.encodeStreamToMessage(this.audioOutputStream));
 
       this.hasPlayed = true;
     }
