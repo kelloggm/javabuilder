@@ -95,7 +95,7 @@ public class Stage {
    * @throws FileNotFoundException if the file can't be found in the project.
    */
   public void playSound(String filename) throws FileNotFoundException {
-    this.audioWriter.writeAudioFile(filename);
+    this.audioWriter.writeAudioFromAssetFile(filename);
   }
 
   /**
@@ -107,13 +107,13 @@ public class Stage {
    *     implemented using an array of loopable sounds (Mike can generate these).
    */
   public void playNote(Instrument instrument, int note, double seconds) {
-    final String sampleFile = instrumentSampleLoader.getSampleFile(instrument, note);
-    if (sampleFile == null) {
+    final String sampleFilePath = instrumentSampleLoader.getSampleFilePath(instrument, note);
+    if (sampleFilePath == null) {
       return;
     }
 
     try {
-      this.audioWriter.writeAudioFile(sampleFile, seconds);
+      this.audioWriter.writeAudioFromLocalFile(sampleFilePath, seconds);
     } catch (FileNotFoundException e) {
       System.out.printf("Could not play instrument: %s at note: %s%n", instrument, note);
     }
@@ -366,11 +366,14 @@ public class Stage {
       this.gifWriter.close();
       this.audioWriter.writeToAudioStreamAndClose();
 
-      this.writeImageAndAudioToFile();
-
-      // TODO: Remove these messages once we've updated the client to load from file.
-      // this.outputAdapter.sendMessage(ImageEncoder.encodeStreamToMessage(this.imageOutputStream));
-      // this.outputAdapter.sendMessage(SoundEncoder.encodeStreamToMessage(this.audioOutputStream));
+      // If we are in local mode, write output data directly to output adapter
+      if (GlobalProtocol.getInstance().getDashboardHostname().contains("localhost")) {
+        this.outputAdapter.sendMessage(ImageEncoder.encodeStreamToMessage(this.imageOutputStream));
+        this.outputAdapter.sendMessage(SoundEncoder.encodeStreamToMessage(this.audioOutputStream));
+      } else {
+        // otherwise write image and audio to file
+        this.writeImageAndAudioToFile();
+      }
 
       this.hasPlayed = true;
     }
