@@ -1,6 +1,5 @@
 package dev.javabuilder;
 
-import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Base64;
 import javax.websocket.OnClose;
@@ -86,13 +85,13 @@ public class WebSocketServer {
                 outputAdapter.sendMessage(new DebuggingMessage("\n" + e.toString()));
                 // Throw here to ensure we always get local logging
                 throw e;
-              } finally {
-                try {
-                  session.close();
-                } catch (IOException e) {
-                  e.printStackTrace();
-                }
-              }
+              } // finally {
+              //                try {
+              //                  session.close();
+              //                } catch (IOException e) {
+              //                  e.printStackTrace();
+              //                }
+              //             }
             });
     codeExecutor.start();
   }

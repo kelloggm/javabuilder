@@ -1,14 +1,18 @@
 package org.code.playground;
 
+import java.util.HashMap;
 import java.util.UUID;
+import org.code.protocol.GlobalProtocol;
+import org.code.protocol.OutputAdapter;
 
-public class ClickableImage {
+public abstract class ClickableImage {
   private String filename;
   private int width;
   private int height;
   private int x;
   private int y;
   private final String id;
+  private final OutputAdapter outputAdapter;
 
   public ClickableImage(String filename, int width, int height, int x, int y) {
     this.filename = filename;
@@ -17,11 +21,10 @@ public class ClickableImage {
     this.x = x;
     this.y = y;
     this.id = UUID.randomUUID().toString();
+    this.outputAdapter = GlobalProtocol.getInstance().getOutputAdapter();
   }
 
-  public void onClick() {
-    System.out.println("clicked image " + this.id + "!");
-  }
+  public abstract void onClick();
 
   public String getId() {
     return this.id;
@@ -33,6 +36,7 @@ public class ClickableImage {
 
   public void setX(int x) {
     this.x = x;
+    this.sendChangedImageMessage("x", Integer.toString(this.x));
   }
 
   public int getY() {
@@ -41,6 +45,7 @@ public class ClickableImage {
 
   public void setY(int y) {
     this.y = y;
+    this.sendChangedImageMessage("y", Integer.toString(this.y));
   }
 
   public int getWidth() {
@@ -49,6 +54,7 @@ public class ClickableImage {
 
   public void setWidth(int width) {
     this.width = width;
+    this.sendChangedImageMessage("width", Integer.toString(this.width));
   }
 
   public int getHeight() {
@@ -57,6 +63,7 @@ public class ClickableImage {
 
   public void setHeight(int height) {
     this.height = height;
+    this.sendChangedImageMessage("height", Integer.toString(this.height));
   }
 
   public String getFilename() {
@@ -65,5 +72,14 @@ public class ClickableImage {
 
   public void setFilename(String filename) {
     this.filename = filename;
+    this.sendChangedImageMessage("filename", this.filename);
+  }
+
+  private void sendChangedImageMessage(String changeKey, String changeValue) {
+    HashMap<String, String> changeDetails = new HashMap<>();
+    changeDetails.put(changeKey, changeValue);
+    changeDetails.put("id", this.getId());
+    this.outputAdapter.sendMessage(
+        new PlaygroundMessage(PlaygroundSignalKey.CHANGED_IMAGE, changeDetails));
   }
 }

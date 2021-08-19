@@ -7,10 +7,13 @@ public class Playground {
   private final OutputAdapter outputAdapter;
   private int nextIndex;
   private HashMap<String, ClickableImage> images;
+  private final PlaygroundEventHandler playgroundEventHandler;
 
   public Playground() {
     this.outputAdapter = GlobalProtocol.getInstance().getOutputAdapter();
     this.nextIndex = 0;
+    this.playgroundEventHandler = new PlaygroundEventHandler(this);
+    this.images = new HashMap<>();
   }
 
   public void addImage(ClickableImage image) {
@@ -37,5 +40,11 @@ public class Playground {
     }
     ClickableImage image = images.get(id);
     image.onClick();
+  }
+
+  public void run() {
+    if (!this.playgroundEventHandler.isListeningForEvents()) {
+      this.playgroundEventHandler.startListeningForEvents();
+    }
   }
 }
