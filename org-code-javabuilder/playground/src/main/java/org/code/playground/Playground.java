@@ -7,13 +7,15 @@ public class Playground {
   private final OutputAdapter outputAdapter;
   private int nextIndex;
   private HashMap<String, ClickableImage> images;
-  private final PlaygroundEventHandler playgroundEventHandler;
+  private boolean isRunning;
+  private final InputHandler inputHandler;
 
   public Playground() {
     this.outputAdapter = GlobalProtocol.getInstance().getOutputAdapter();
     this.nextIndex = 0;
-    this.playgroundEventHandler = new PlaygroundEventHandler(this);
     this.images = new HashMap<>();
+    this.isRunning = false;
+    this.inputHandler = GlobalProtocol.getInstance().getInputHandler();
   }
 
   public void addImage(ClickableImage image) {
@@ -43,8 +45,19 @@ public class Playground {
   }
 
   public void run() {
-    if (!this.playgroundEventHandler.isListeningForEvents()) {
-      this.playgroundEventHandler.startListeningForEvents();
+    if (this.isRunning) {
+      // TODO throw exception
+      return;
+    }
+    this.outputAdapter.sendMessage(new PlaygroundMessage(PlaygroundSignalKey.RUN, new HashMap<>()));
+    this.isRunning = true;
+
+    // Wait for next user input
+    while (this.isRunning) {
+      String message = this.inputHandler.getNextMessageForType(InputMessageType.PLAYGROUND);
+      if (message != null) {
+        this.handleClickEvent(message);
+      }
     }
   }
 }
