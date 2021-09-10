@@ -6,23 +6,24 @@ import org.code.protocol.*;
 public class Playground {
   private final OutputAdapter outputAdapter;
   private int nextIndex;
-  private HashMap<String, ClickableImage> images;
+  private HashMap<String, ClickableItem> clickableItems;
+  private HashMap<String, Item> items;
   private boolean isRunning;
   private final InputHandler inputHandler;
 
   public Playground() {
     this.outputAdapter = GlobalProtocol.getInstance().getOutputAdapter();
     this.nextIndex = 0;
-    this.images = new HashMap<>();
+    this.clickableItems = new HashMap<>();
     this.isRunning = false;
     this.inputHandler = GlobalProtocol.getInstance().getInputHandler();
   }
 
-  public void addImage(ClickableImage image) {
-    if (this.images.containsKey(image.getId())) {
+  public void addClickableItem(ClickableItem image) {
+    if (this.clickableItems.containsKey(image.getId())) {
       return;
     } else {
-      this.images.put(image.getId(), image);
+      this.clickableItems.put(image.getId(), image);
     }
     HashMap<String, String> details = new HashMap<>();
     details.put("filename", image.getFilename());
@@ -33,14 +34,34 @@ public class Playground {
     details.put("id", image.getId());
     details.put("index", Integer.toString(this.nextIndex));
     this.nextIndex++;
-    this.outputAdapter.sendMessage(new PlaygroundMessage(PlaygroundSignalKey.ADD_IMAGE, details));
+    this.outputAdapter.sendMessage(
+        new PlaygroundMessage(PlaygroundSignalKey.ADD_CLICKABLE_ITEM, details));
+  }
+
+  public void addItem(Item item) {
+    if (this.items.containsKey(item.getId())) {
+      return;
+    } else {
+      this.items.put(item.getId(), item);
+    }
+    HashMap<String, String> details = new HashMap<>();
+    details.put("filename", item.getFilename());
+    details.put("width", Integer.toString(item.getWidth()));
+    details.put("height", Integer.toString(item.getHeight()));
+    details.put("x", Integer.toString(item.getX()));
+    details.put("y", Integer.toString(item.getY()));
+    details.put("id", item.getId());
+    details.put("index", Integer.toString(this.nextIndex));
+    this.nextIndex++;
+    this.outputAdapter.sendMessage(new PlaygroundMessage(PlaygroundSignalKey.ADD_ITEM, details));
   }
 
   protected void handleClickEvent(String id) {
-    if (!images.containsKey(id)) {
+    if (!clickableItems.containsKey(id)) {
       return;
     }
-    ClickableImage image = images.get(id);
+    ClickableItem image = clickableItems.get(id);
+    image.playClickSound();
     image.onClick();
   }
 
