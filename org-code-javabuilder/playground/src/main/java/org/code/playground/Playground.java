@@ -1,9 +1,16 @@
 package org.code.playground;
 
 import java.util.HashMap;
+import java.util.UUID;
 import org.code.protocol.*;
 
 public class Playground {
+  private static final Playground playgroundInstance = new Playground();
+
+  public static Playground getInstance() {
+    return Playground.playgroundInstance;
+  }
+
   private final OutputAdapter outputAdapter;
   private int nextIndex;
   private HashMap<String, ClickableItem> clickableItems;
@@ -15,6 +22,7 @@ public class Playground {
     this.outputAdapter = GlobalProtocol.getInstance().getOutputAdapter();
     this.nextIndex = 0;
     this.clickableItems = new HashMap<>();
+    this.items = new HashMap<>();
     this.isRunning = false;
     this.inputHandler = GlobalProtocol.getInstance().getInputHandler();
   }
@@ -38,6 +46,16 @@ public class Playground {
         new PlaygroundMessage(PlaygroundSignalKey.ADD_CLICKABLE_ITEM, details));
   }
 
+  public void removeClickableItem(ClickableItem item) {
+    if (this.clickableItems.containsKey(item.getId())) {
+      HashMap<String, String> details = new HashMap<>();
+      details.put("id", item.getId());
+      this.outputAdapter.sendMessage(
+          new PlaygroundMessage(PlaygroundSignalKey.REMOVE_CLICKABLE_ITEM, details));
+      this.clickableItems.remove(item.getId());
+    }
+  }
+
   public void addItem(Item item) {
     if (this.items.containsKey(item.getId())) {
       return;
@@ -56,13 +74,30 @@ public class Playground {
     this.outputAdapter.sendMessage(new PlaygroundMessage(PlaygroundSignalKey.ADD_ITEM, details));
   }
 
+  public void removeItem(Item item) {
+    if (this.items.containsKey(item.getId())) {
+      HashMap<String, String> details = new HashMap<>();
+      details.put("id", item.getId());
+      this.outputAdapter.sendMessage(
+          new PlaygroundMessage(PlaygroundSignalKey.REMOVE_ITEM, details));
+      this.items.remove(item.getId());
+    }
+  }
+
   protected void handleClickEvent(String id) {
+    String eventId = UUID.randomUUID().toString();
+    HashMap<String, String> clickEventDetails = new HashMap<>();
+    clickEventDetails.put("id", eventId);
+    this.outputAdapter.sendMessage(
+        new PlaygroundMessage(PlaygroundSignalKey.STARTED_CLICK_EVENT, clickEventDetails));
     if (!clickableItems.containsKey(id)) {
       return;
     }
     ClickableItem image = clickableItems.get(id);
     image.playClickSound();
     image.onClick();
+    this.outputAdapter.sendMessage(
+        new PlaygroundMessage(PlaygroundSignalKey.FINISHED_CLICK_EVENT, clickEventDetails));
   }
 
   public void run() {
@@ -80,5 +115,9 @@ public class Playground {
         this.handleClickEvent(message);
       }
     }
+  }
+
+  public void exit() {
+    this.isRunning = false;
   }
 }
