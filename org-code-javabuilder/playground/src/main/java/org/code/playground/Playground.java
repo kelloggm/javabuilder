@@ -17,6 +17,7 @@ public class Playground {
   private HashMap<String, Item> items;
   private boolean isRunning;
   private final InputHandler inputHandler;
+  private PlaygroundTimer playgroundTimer;
 
   public Playground() {
     this.outputAdapter = GlobalProtocol.getInstance().getOutputAdapter();
@@ -25,6 +26,14 @@ public class Playground {
     this.items = new HashMap<>();
     this.isRunning = false;
     this.inputHandler = GlobalProtocol.getInstance().getInputHandler();
+    this.playgroundTimer = new PlaygroundTimer();
+  }
+
+  public void setBackgroundImage(String filename) {
+    HashMap<String, String> details = new HashMap<>();
+    details.put("filename", filename);
+    this.outputAdapter.sendMessage(
+        new PlaygroundMessage(PlaygroundSignalKey.SET_BACKGROUND_IMAGE, details));
   }
 
   public void addClickableItem(ClickableItem image) {
@@ -85,6 +94,7 @@ public class Playground {
   }
 
   protected void handleClickEvent(String id) {
+    this.playgroundTimer.onMessageReceived();
     String eventId = UUID.randomUUID().toString();
     HashMap<String, String> clickEventDetails = new HashMap<>();
     clickEventDetails.put("id", eventId);
@@ -98,6 +108,7 @@ public class Playground {
     image.onClick();
     this.outputAdapter.sendMessage(
         new PlaygroundMessage(PlaygroundSignalKey.FINISHED_CLICK_EVENT, clickEventDetails));
+    this.playgroundTimer.onUpdateDispatched();
   }
 
   public void run() {
