@@ -2,6 +2,7 @@ package org.code.javabuilder;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URL;
@@ -9,7 +10,16 @@ import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.List;
 import org.code.protocol.*;
-import org.junit.jupiter.api.Test;
+import org.junit.platform.engine.discovery.ClassSelector;
+import org.junit.platform.engine.discovery.DiscoverySelectors;
+import org.junit.platform.launcher.Launcher;
+import org.junit.platform.launcher.LauncherDiscoveryRequest;
+import org.junit.platform.launcher.LauncherSession;
+import org.junit.platform.launcher.TestPlan;
+import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
+import org.junit.platform.launcher.core.LauncherFactory;
+import org.junit.platform.launcher.listeners.SummaryGeneratingListener;
+import org.junit.platform.launcher.listeners.TestExecutionSummary;
 
 /** The class that executes the student's code */
 public class JavaRunner {
@@ -44,7 +54,6 @@ public class JavaRunner {
     try {
       // load and run the main method of the class
       Method mainMethod = this.findMainMethod(urlClassLoader);
-      this.findTestClasses(urlClassLoader);
       this.outputAdapter.sendMessage(new StatusMessage(StatusMessageKey.RUNNING));
       mainMethod.invoke(null, new Object[] {null});
     } catch (IllegalAccessException e) {
@@ -117,28 +126,42 @@ public class JavaRunner {
     return mainMethod;
   }
 
-  public List<Class> findTestClasses(URLClassLoader urlClassLoader) {
-    List<Class> testClasses = new ArrayList<>();
+  public void runTests() {
+    // Include the user-facing api jars in the code we are loading so student code can access them.
+    URL[] classLoaderUrls = Util.getAllJarURLs(this.executableLocation);
 
-    for (JavaProjectFile file : this.javaFiles) {
-      try {
-        Class c = urlClassLoader.loadClass(file.getClassName());
-        Method[] declaredMethods = c.getDeclaredMethods();
-        boolean foundTests = false;
-        for (Method method : declaredMethods) {
-          if (method.isAnnotationPresent(Test.class)) {
-            System.out.println("found a test!");
-            foundTests = true;
-          }
-        }
-        if (foundTests) {
-          testClasses.add(c);
-        }
-      } catch (ClassNotFoundException e) {
-        // May be thrown if file is empty or contains only comments
-        // throw new UserInitiatedException(UserInitiatedExceptionKey.CLASS_NOT_FOUND, e);
+    // Create a new URLClassLoader. Use the current class loader as the parent so IO settings are
+    // preserved.
+    URLClassLoader urlClassLoader =
+        new URLClassLoader(classLoaderUrls, JavaRunner.class.getClassLoader());
+
+    this.outputAdapter.sendMessage(new StatusMessage(StatusMessageKey.RUNNING));
+    LauncherDiscoveryRequest request = null;
+    try {
+      List<ClassSelector> classSelectors = new ArrayList<>();
+      for (JavaProjectFile file : this.javaFiles) {
+        classSelectors.add(
+            DiscoverySelectors.selectClass(urlClassLoader.loadClass(file.getClassName())));
       }
+      request = LauncherDiscoveryRequestBuilder.request().selectors(classSelectors).build();
+
+      SummaryGeneratingListener listener = new SummaryGeneratingListener();
+      try (LauncherSession session = LauncherFactory.openSession()) {
+        Launcher launcher = session.getLauncher();
+        // Register a listener of your choice
+        launcher.registerTestExecutionListeners(listener);
+        // Discover tests and build a test plan
+        TestPlan testPlan = launcher.discover(request);
+        // Execute test plan
+        launcher.execute(testPlan);
+      }
+
+      TestExecutionSummary summary = listener.getSummary();
+      PrintWriter printWriter = new PrintWriter(System.out);
+      summary.printTo(printWriter);
+      printWriter.close();
+    } catch (ClassNotFoundException e) {
+      e.printStackTrace();
     }
-    return testClasses;
   }
 }

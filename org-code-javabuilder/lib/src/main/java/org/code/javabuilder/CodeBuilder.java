@@ -60,7 +60,8 @@ public class CodeBuilder implements AutoCloseable {
     } catch (MalformedURLException e) {
       throw new InternalServerError(InternalErrorKey.INTERNAL_RUNTIME_EXCEPTION, e);
     }
-    runner.runCode();
+    // runner.runCode();
+    runner.runTests();
   }
 
   /**
