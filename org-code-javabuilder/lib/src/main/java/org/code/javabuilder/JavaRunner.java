@@ -159,6 +159,7 @@ public class JavaRunner {
       TestExecutionSummary summary = listener.getSummary();
       PrintWriter printWriter = new PrintWriter(System.out);
       summary.printTo(printWriter);
+      summary.printFailuresTo(printWriter);
       printWriter.close();
     } catch (ClassNotFoundException e) {
       e.printStackTrace();
