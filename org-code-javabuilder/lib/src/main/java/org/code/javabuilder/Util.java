@@ -16,6 +16,7 @@ public class Util {
   private static final String NEIGHBORHOOD_JAR = "neighborhood-full.jar";
   private static final String THEATER_JAR = "theater-full.jar";
   private static final String PLAYGROUND_JAR = "playground-full.jar";
+  private static final String DEPENDENCIES_JAR = "dependencies-full.jar";
 
   /** @return a URL describing the location the given jar */
   private static URL getJarURL(String jarName) {
@@ -28,7 +29,8 @@ public class Util {
       executableLocation,
       Util.getJarURL(NEIGHBORHOOD_JAR),
       Util.getJarURL(THEATER_JAR),
-      Util.getJarURL(PLAYGROUND_JAR)
+      Util.getJarURL(PLAYGROUND_JAR),
+      Util.getJarURL(DEPENDENCIES_JAR)
     };
   }
 
@@ -39,6 +41,7 @@ public class Util {
       allJarPaths.add(Paths.get(Util.getJarURL(NEIGHBORHOOD_JAR).toURI()).toString());
       allJarPaths.add(Paths.get(Util.getJarURL(THEATER_JAR).toURI()).toString());
       allJarPaths.add(Paths.get(Util.getJarURL(PLAYGROUND_JAR).toURI()).toString());
+      allJarPaths.add(Paths.get(Util.getJarURL(DEPENDENCIES_JAR).toURI()).toString());
     } catch (URISyntaxException e) {
       throw new InternalServerError(InternalErrorKey.INTERNAL_COMPILER_EXCEPTION, e);
     }

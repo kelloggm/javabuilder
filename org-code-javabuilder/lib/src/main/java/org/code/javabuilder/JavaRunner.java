@@ -6,8 +6,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.util.ArrayList;
 import java.util.List;
 import org.code.protocol.*;
+import org.junit.jupiter.api.Test;
 
 /** The class that executes the student's code */
 public class JavaRunner {
@@ -42,6 +44,7 @@ public class JavaRunner {
     try {
       // load and run the main method of the class
       Method mainMethod = this.findMainMethod(urlClassLoader);
+      this.findTestClasses(urlClassLoader);
       this.outputAdapter.sendMessage(new StatusMessage(StatusMessageKey.RUNNING));
       mainMethod.invoke(null, new Object[] {null});
     } catch (IllegalAccessException e) {
@@ -112,5 +115,30 @@ public class JavaRunner {
       throw new UserInitiatedException(UserInitiatedExceptionKey.NO_MAIN_METHOD);
     }
     return mainMethod;
+  }
+
+  public List<Class> findTestClasses(URLClassLoader urlClassLoader) {
+    List<Class> testClasses = new ArrayList<>();
+
+    for (JavaProjectFile file : this.javaFiles) {
+      try {
+        Class c = urlClassLoader.loadClass(file.getClassName());
+        Method[] declaredMethods = c.getDeclaredMethods();
+        boolean foundTests = false;
+        for (Method method : declaredMethods) {
+          if (method.isAnnotationPresent(Test.class)) {
+            System.out.println("found a test!");
+            foundTests = true;
+          }
+        }
+        if (foundTests) {
+          testClasses.add(c);
+        }
+      } catch (ClassNotFoundException e) {
+        // May be thrown if file is empty or contains only comments
+        // throw new UserInitiatedException(UserInitiatedExceptionKey.CLASS_NOT_FOUND, e);
+      }
+    }
+    return testClasses;
   }
 }
