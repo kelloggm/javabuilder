@@ -9,13 +9,11 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import org.code.protocol.*;
 import org.junit.platform.engine.discovery.ClassSelector;
 import org.junit.platform.engine.discovery.DiscoverySelectors;
-import org.junit.platform.launcher.Launcher;
-import org.junit.platform.launcher.LauncherDiscoveryRequest;
-import org.junit.platform.launcher.LauncherSession;
-import org.junit.platform.launcher.TestPlan;
+import org.junit.platform.launcher.*;
 import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
 import org.junit.platform.launcher.core.LauncherFactory;
 import org.junit.platform.launcher.listeners.SummaryGeneratingListener;
@@ -152,6 +150,14 @@ public class JavaRunner {
         launcher.registerTestExecutionListeners(listener);
         // Discover tests and build a test plan
         TestPlan testPlan = launcher.discover(request);
+        Set<TestIdentifier> tests = testPlan.getRoots();
+        for (TestIdentifier test : tests) {
+          System.out.println("root test: " + test.getDisplayName());
+          Set<TestIdentifier> childTests = testPlan.getDescendants(test);
+          for (TestIdentifier childTest : childTests) {
+            System.out.println("child test: " + childTest.getDisplayName());
+          }
+        }
         // Execute test plan
         launcher.execute(testPlan);
       }
