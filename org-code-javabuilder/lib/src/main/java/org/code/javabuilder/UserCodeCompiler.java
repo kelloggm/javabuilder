@@ -1,10 +1,12 @@
 package org.code.javabuilder;
 
+import com.sun.source.util.Plugin;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.ServiceLoader;
 import javax.tools.*;
 import javax.tools.JavaCompiler.CompilationTask;
 import org.code.protocol.InternalErrorKey;
@@ -84,6 +86,13 @@ public class UserCodeCompiler {
     List<String> optionList = new ArrayList<String>();
     optionList.add("-classpath");
     optionList.add(Util.getAllJarPaths());
+    // optionList.add("-Xplugin:UserCodeCompilerPlugin");
+
+    ServiceLoader<Plugin> pluginLoader = ServiceLoader.load(Plugin.class);
+    // pluginLoader.reload();
+    for (Plugin plugin : pluginLoader) {
+      System.out.println("found plugin " + plugin.getName());
+    }
 
     // create compilation task
     return compiler.getTask(null, fileManager, diagnostics, optionList, null, files);
