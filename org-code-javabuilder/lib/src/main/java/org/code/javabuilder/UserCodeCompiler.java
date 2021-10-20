@@ -85,8 +85,8 @@ public class UserCodeCompiler {
     // them.
     List<String> optionList = new ArrayList<String>();
     optionList.add("-classpath");
-    optionList.add(Util.getAllJarPaths());
-    // optionList.add("-Xplugin:UserCodeCompilerPlugin");
+    optionList.add(Util.getAllJarPaths() + "," + System.getProperty("java.class.path"));
+    optionList.add("-Xplugin:UserCodeCompilerPlugin");
 
     ServiceLoader<Plugin> pluginLoader = ServiceLoader.load(Plugin.class);
     // pluginLoader.reload();
