@@ -1,10 +1,7 @@
-package org.code.javabuilder;
-
-import static org.code.protocol.LoggerNames.MAIN_LOGGER;
+package org.code.compilerplugin;
 
 import com.sun.source.util.JavacTask;
 import com.sun.source.util.Plugin;
-import java.util.logging.Logger;
 
 public class UserCodeCompilerPlugin implements Plugin {
   @Override
@@ -14,6 +11,6 @@ public class UserCodeCompilerPlugin implements Plugin {
 
   @Override
   public void init(JavacTask task, String... args) {
-    Logger.getLogger(MAIN_LOGGER).info("in the plugin!");
+    System.out.println("in the plugin!");
   }
 }

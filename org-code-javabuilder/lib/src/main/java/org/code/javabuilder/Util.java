@@ -14,7 +14,11 @@ import org.code.protocol.InternalErrorKey;
 /** A set of static utility functions that are used in multiple locations */
 public class Util {
   private static final String[] JAR_NAMES = {
-    "neighborhood-full.jar", "theater-full.jar", "playground-full.jar", "studentlib-full.jar"
+    "neighborhood-full.jar",
+    "theater-full.jar",
+    "playground-full.jar",
+    "studentlib-full.jar",
+    "compilerplugin-full.jar"
   };
 
   /** @return a URL describing the location the given jar */
